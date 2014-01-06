@@ -179,7 +179,7 @@ dt { font-weight: bold;}
 dd { margin: 0 0 1.5em 0; text-align: justify; }
 
 ul.compact { margin: 0; padding: 0;}
-ul.compact li { list-style: ;
+ul.compact li {
 	list-style-type: square;
 	list-style-position: inside;
 }
