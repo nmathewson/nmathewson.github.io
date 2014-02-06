@@ -13,30 +13,13 @@ swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
 nulla snuvv.
 
 <ul class="posts">
-  {% for post in site.posts %}
-    <li><span>{{ post.date | date_to_string }}</span> &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></li>
-  {% endfor %}
-</ul>
-
-Barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
-enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
-swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
-nulla snuvv.
-Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
-barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
-enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
-swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
-nulla snuvv.
-
-<ul class="posts">
   {% for post in site.posts limit:10 %}
-    <li><span class="posttitle">{{ post.date | date_to_string }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span><p>{{ post.content | strip_html | truncatewords: 25 }}...</p></li>
+    <li><span class="posttitle">{{ post.date | date_to_string }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span><p class="postsummary">{{ post.summary }}</p></li>
   {% endfor %}
 
   <li><a href="/archive.html">Older posts</a></li>
 </ul>
+
 
 Ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
 nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in

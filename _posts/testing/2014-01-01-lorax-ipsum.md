@@ -2,6 +2,7 @@
 layout: post
 title: Lorax ipsum gruvvulus thneed amet
 categories: ["testing"]
+summary: "Lorax ipsum gruvvulus thneed amet."
 ---
 
 Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do

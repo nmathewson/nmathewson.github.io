@@ -48,6 +48,7 @@ h1,h2,h3,h4 {
 	font-family: 'lucida grande', sans-serif;
 }
 h1 { margin-bottom: 1em; }
+h1.emphnext { font-weight:bold; }
 h2 {
 	font-size: 100%;
 	line-height: 1.5em;
@@ -126,11 +127,14 @@ sup { line-height: 1ex; }
 	line-height: 1.714em;
 }
 blockquote {
-	padding: 0 2.8em;
+	padding: 0 1.5em 0 25%;
 	margin: 1.714em 0;
 	color: #444;
 	font-size: 0.875em;
 	line-height: 1.714em;
+}
+blockquote p {
+        margin: 0 0 .5em 0; text-align: left;
 }
 
 .note {
@@ -546,3 +550,4 @@ img.maruku-png { }
 	border:1px solid #4C964D;
 	color:#FFF;
 }
+p.postsummary { margin: 0 0 1em 2em; }

@@ -32,7 +32,7 @@ Usage:
       <ul>
     {% endif %}
   
-    <li><span class="posttitle">{{ post.date | date: "%B %e, %Y" }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span><p>{{ post.content | strip_html | truncatewords: 35 }}...</p></li>
+    <li><span class="posttitle">{{ post.date | date: "%B %e, %Y" }} &raquo; <a href="{{ BASE_PATH }}{{ post.url }}">{{ post.title }}</a></span><p class="postsummary">{{ post.summary }}</p></li>
   
     {% if forloop.last %}
       </ul>

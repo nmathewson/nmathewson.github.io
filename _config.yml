@@ -135,3 +135,5 @@ redcarpet:
    extensions: ["smart", "autolink", "strikethrough", "no_intra_emphasis", "with_toc_data"]
 
 encoding: UTF-8
+
+excerpt_separator: "<!--more-->"
