@@ -13,9 +13,9 @@
 		<updated>2021-04-27T00:00:00+00:00</updated>
 		<link href="https://www.inter-allia.net/async-into-future/" type="text/html"/>
 		<id>https://www.inter-allia.net/async-into-future/</id>
-		<content type="html">&lt;p&gt;Because doesn&#x27;t yet support
-&lt;a href=&quot;https:&#x2F;&#x2F;smallcultfollowing.com&#x2F;babysteps&#x2F;blog&#x2F;2019&#x2F;10&#x2F;26&#x2F;async-fn-in-traits-are-hard&#x2F;&quot;&gt;asynchronous functions in traits&lt;&#x2F;a&gt;,
-several important traits (like
+		<content type="html">&lt;p&gt;Rust doesn&#x27;t yet support
+&lt;a href=&quot;https:&#x2F;&#x2F;smallcultfollowing.com&#x2F;babysteps&#x2F;blog&#x2F;2019&#x2F;10&#x2F;26&#x2F;async-fn-in-traits-are-hard&#x2F;&quot;&gt;asynchronous functions in traits&lt;&#x2F;a&gt;, but
+several important async-related traits (like
 &lt;a href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;futures&#x2F;0.3.14&#x2F;futures&#x2F;io&#x2F;trait.AsyncRead.html&quot;&gt;&lt;code&gt;AsyncRead&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;
 and &lt;a href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;futures&#x2F;0.3.14&#x2F;futures&#x2F;stream&#x2F;trait.Stream.html&quot;&gt;&lt;code&gt;Stream&lt;&#x2F;code&gt;&lt;&#x2F;a&gt; )
 define their interface using functions that return
@@ -23,10 +23,11 @@ define their interface using functions that return
 you do when you have a function that &lt;em&gt;is&lt;&#x2F;em&gt; async, and you need to use it to
 implement one of these traits?&lt;&#x2F;p&gt;
 &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;(I&#x27;ll be assuming that you already know a little about pinning,
-pin-projection, futures, and async programming in Rust: not because they&#x27;re
-easy topics, but because I&#x27;m still learning them myself, and I don&#x27;t
-understand them well enough be a good teacher.)&lt;&#x2F;p&gt;
+&lt;p&gt;(I&#x27;ll be assuming that you already know a little about pinning, futures,
+and async programming in Rust. That&#x27;s not because they&#x27;re easy
+“everybody-should-know-it” topics, but because I&#x27;m still learning them
+myself, and I don&#x27;t understand them well enough be a good teacher. You
+can probably keep reading if you don&#x27;t understand them well . )&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;a-little-background&quot;&gt;A little background&lt;&#x2F;h1&gt;
 &lt;p&gt;Here&#x27;s a situation I ran into earlier this year.  In the end, I only
 solved it with help from
@@ -46,17 +47,18 @@ type that provides an anonymous connection over the Tor network:&lt;&#x2F;p&gt;
     { ... }
 }
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Now, there&#x27;s a lot of complexity hiding in those ellipses.  A Tor
-implementation that&#x27;s trying to read may need to wait for data to arrive.  It
-may also need to &lt;em&gt;send&lt;&#x2F;em&gt; messages in response to arriving data, update
-internal state, and all kinds of delightful stuff.  So rewriting those
-functions as explicitly returning a typed future was &lt;em&gt;not&lt;&#x2F;em&gt; an option.&lt;&#x2F;p&gt;
-&lt;p&gt;But I wanted &lt;code&gt;DataStream&lt;&#x2F;code&gt; to implement &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; and &lt;code&gt;AsyncWrite&lt;&#x2F;code&gt;, so it
-can be used with other code in the Rust async ecosystem.  That way,
-integrating other Rust programs with Arti will be as simple as teaching them
-to construct a &lt;code&gt;DataStream&lt;&#x2F;code&gt; in place of a &lt;code&gt;TcpStream&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Let&#x27;s look at &lt;code&gt;AsyncRead&lt;&#x2F;code&gt;: it&#x27;s simpler than &lt;code&gt;AsyncWrite&lt;&#x2F;code&gt;.  The only required
-method in &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; is:&lt;&#x2F;p&gt;
+&lt;p&gt;Now, there&#x27;s a lot of complexity hiding in those ellipses.  Tor isn&#x27;t
+a simple protocol: when it&#x27;s trying to read, it may need to wait for data
+to arrive.  It may also need to &lt;em&gt;send&lt;&#x2F;em&gt; messages in response to arriving
+data. It might need to update
+internal state, or even tear down an entire Tor circuit because of a
+protocol error. Async functions made it possible to implement all of
+this stuff in a more-or-less comprehensible way, so rewriting those
+functions to explicitly return a typed future was &lt;em&gt;not&lt;&#x2F;em&gt; an option.&lt;&#x2F;p&gt;
+&lt;p&gt;But I wanted &lt;code&gt;DataStream&lt;&#x2F;code&gt; to implement &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; and &lt;code&gt;AsyncWrite&lt;&#x2F;code&gt;, so
+I could use it with other code in the Rust async ecosystem.  So let&#x27;s
+look at &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; (because it&#x27;s simpler than &lt;code&gt;AsyncWrite&lt;&#x2F;code&gt;).  The only
+required method in &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; is:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
 &lt;code&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;pub fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;poll_read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: Pin&amp;lt;&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut Self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;,
@@ -64,17 +66,19 @@ method in &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; is:&lt;&#x2F;p&gt;
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;buf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;u8&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;]
 ) -&amp;gt; Poll&amp;lt;io::Result&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;&amp;gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;This &lt;code&gt;read&lt;&#x2F;code&gt; has to check whether there&#x27;s any data that can be read into &lt;code&gt;buf&lt;&#x2F;code&gt;
+&lt;p&gt;This &lt;code&gt;read()&lt;&#x2F;code&gt; has to check whether there&#x27;s data can be read into &lt;code&gt;buf&lt;&#x2F;code&gt;
 immediately, without blocking.  If there is, we read the data and
-return the number of bytes read.  Otherwise, we have to schedule ourself on
+return the number of bytes we read.  Otherwise, we have to schedule ourself on
 &lt;code&gt;cx&lt;&#x2F;code&gt;, and return &lt;code&gt;Poll::Pending&lt;&#x2F;code&gt;.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#other-read-results&quot;&gt;1&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;h1 id=&quot;moving-forward-getting-stuck&quot;&gt;Moving forward, getting stuck&lt;&#x2F;h1&gt;
 &lt;p&gt;Compare &lt;code&gt;poll_read&lt;&#x2F;code&gt; to the &lt;code&gt;read&lt;&#x2F;code&gt; function in &lt;code&gt;DataStream&lt;&#x2F;code&gt;.  First off,
-there&#x27;s a mismatch between how these two functions use their output buffers.
-Because &lt;code&gt;DataStream::read&lt;&#x2F;code&gt; is async, it returns a future that will hang on to
-its buffer until the future is finally ready.  But &lt;code&gt;poll_read&lt;&#x2F;code&gt; has to returns
-right away, and it can&#x27;t hang on to its buffer at all.  So I started by
-defining a wrapper variant of &lt;code&gt;DataStream&lt;&#x2F;code&gt; to implements the behavior that
-&lt;code&gt;poll_read&lt;&#x2F;code&gt; would need:&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#inefficient&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+there&#x27;s a mismatch between how these two functions use their output
+buffers.  Because &lt;code&gt;DataStream::read&lt;&#x2F;code&gt; is async, it returns a future that
+will hang on to its buffer until the future is finally ready.  But
+&lt;code&gt;poll_read&lt;&#x2F;code&gt; has to return right away, and it can&#x27;t store a reference to
+its buffer at all.  So I started by defining a wrapper variant of
+&lt;code&gt;DataStream&lt;&#x2F;code&gt; to implements the behavior that &lt;code&gt;poll_read&lt;&#x2F;code&gt; would
+need:&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#inefficient&quot;&gt;2&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
 &lt;code&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;pub struct &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;DataReaderImpl {
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;s&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: DataStream,
@@ -93,13 +97,15 @@ defining a wrapper variant of &lt;code&gt;DataStream&lt;&#x2F;code&gt; to implem
             pending: Vec::new(),
         }
     }
-    async &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fill_buf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) -&amp;gt; io::Result&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt; {
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; Load up to 1k into the pending buffer.
+&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;    async &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;fill_buf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) -&amp;gt; io::Result&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt; {
         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; data = vec![&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;1024&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;];
         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; len = &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;.s.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;read&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; data[..]).await?;
         data.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;truncate&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(len);
         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;.pending.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;extend&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(data);
         Ok(len)
     }
+    &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; pull bytes from the pending buffer into `buf`.
     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;extract_bytes&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;buf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;: &amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; [&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;u8&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;]) -&amp;gt; &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;{
         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;let&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt; n = cmp::min(buf.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;.pending.&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;len&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;());
         buf[..n].&lt;&#x2F;span&gt;&lt;span style=&quot;color:#96b5b4;&quot;&gt;copy_from_slice&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&amp;amp;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;.pending[..n]);
@@ -108,8 +114,8 @@ defining a wrapper variant of &lt;code&gt;DataStream&lt;&#x2F;code&gt; to implem
     }
 }
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;Then, I thought, it ought to be easy to write &lt;code&gt;AsyncRead&lt;&#x2F;code&gt;!  Here was my first
-try:&lt;&#x2F;p&gt;
+&lt;p&gt;Then, I thought, it ought to be easy to write &lt;code&gt;AsyncRead&lt;&#x2F;code&gt;!  Here was my
+first try:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
 &lt;code&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; This won&amp;#39;t work...
 &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;impl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;AsyncRead &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;DataReaderImpl {
@@ -128,8 +134,8 @@ try:&lt;&#x2F;p&gt;
                         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;return &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;Poll::Ready(Ok(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#d08770;&quot;&gt;0&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;)); &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; EOF
                     &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
                 Poll::Pending =&amp;gt;
-                    todo!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;crud, where do i put the future?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;),
-            }
+                    todo!(&amp;quot;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#a3be8c;&quot;&gt;crud, where do i put the future?&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;quot;), &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; XXXX
+            &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;}
         }
 
         &lt;&#x2F;span&gt;&lt;span style=&quot;color:#65737e;&quot;&gt;&#x2F;&#x2F; We have some data; move it out to the caller.
@@ -138,35 +144,38 @@ try:&lt;&#x2F;p&gt;
     }
 }
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
-&lt;p&gt;So far, so good!  But do I do if the future says it&#x27;s pending?  I need to
-store it and poll it again later the next time I call this function.  But to
-do that, I won&#x27;t be able to pin it to the stack!  I&#x27;ll have to store it in
-the structure instead.  And since it comes from an async function, it won&#x27;t
-have a type that I can name; I&#x27;ll have to store it as a &lt;code&gt;Box&amp;lt;dyn Future&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;Oh hang on, it&#x27;ll need to be pinned. And sometimes I won&#x27;t have a future at
-all.  Maybe I store it in an &lt;code&gt;Option&amp;lt;Pin&amp;lt;Box&amp;lt;dyn Future&amp;gt;&amp;gt;&amp;gt;&lt;&#x2F;code&gt;?&lt;&#x2F;p&gt;
+&lt;p&gt;Almost there!  But what do I do if the future says it&#x27;s pending?  I need
+to store it and poll it again later the next time I call this function.
+But to do &lt;em&gt;that&lt;&#x2F;em&gt;, I won&#x27;t be able to pin the future to the stack!  I&#x27;ll
+have to store it in the structure instead.  And since the future comes
+from an async function, it won&#x27;t have a type that I can name; I&#x27;ll have
+to store it as a &lt;code&gt;Box&amp;lt;dyn Future&amp;gt;&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;Oh hang on, it&#x27;ll need to be pinned. And sometimes there won&#x27;t be a read
+in progress, so I won&#x27;t have a future at
+all. Maybe I store it in an &lt;code&gt;Option&amp;lt;Pin&amp;lt;Box&amp;lt;dyn Future&amp;gt;&amp;gt;&amp;gt;&lt;&#x2F;code&gt;?&lt;&#x2F;p&gt;
 &lt;p&gt;(This is the point where I had to take a break and figure out
-&lt;a href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;pin-project&#x2F;1.0.7&#x2F;pin_project&#x2F;index.html&quot;&gt;pin-projection&lt;&#x2F;a&gt;.)&lt;&#x2F;p&gt;
+&lt;a href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;pin-project&#x2F;1.0.7&#x2F;pin_project&#x2F;index.html&quot;&gt;pin-projection&lt;&#x2F;a&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#didnthelp&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;.)&lt;&#x2F;p&gt;
 &lt;p&gt;But after I played around with &lt;em&gt;that&lt;&#x2F;em&gt; for a while, I hit the final snag:
 ultimately, I was trying to create a
-&lt;a href=&quot;https:&#x2F;&#x2F;boats.gitlab.io&#x2F;blog&#x2F;post&#x2F;2018-01-25-async-i-self-referential-structs&#x2F;#self-referential-structs&quot;&gt;self-referential structure&lt;&#x2F;a&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#self-ref&quot;&gt;3&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;,
+&lt;a href=&quot;https:&#x2F;&#x2F;boats.gitlab.io&#x2F;blog&#x2F;post&#x2F;2018-01-25-async-i-self-referential-structs&#x2F;#self-referential-structs&quot;&gt;self-referential structure&lt;&#x2F;a&gt;&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#self-ref&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;,
 which you can&#x27;t do in safe Rust.
 You see, the future returned by &lt;code&gt;DataReaderImpl::fill_buf&lt;&#x2F;code&gt; needs to hold a
 reference to the &lt;code&gt;DataReaderImpl&lt;&#x2F;code&gt;, and so the future needs to &lt;em&gt;outlive&lt;&#x2F;em&gt; the
-DataReaderImpl.  That means you can&#x27;t store it in the DataReaderImpl.  You
-can&#x27;t even store it and the DataReaderImpl in the same struct: that creates
+&lt;code&gt;DataReaderImpl&lt;&#x2F;code&gt;.  That means you can&#x27;t store it in the DataReaderImpl.  You
+can&#x27;t even store it and the &lt;code&gt;DataReaderImpl&lt;&#x2F;code&gt; in the same struct: that creates
 self-reference.&lt;&#x2F;p&gt;
 &lt;p&gt;So what could I do?  Was I supposed to use unsafe code or some tricky
 crate to make a self-referential struct anyway?  Was my solution
 fundamentally flawed?  Was I even trying to do something possible‽&lt;&#x2F;p&gt;
-&lt;p&gt;I asked for help on Twitter.  Fortunately, Daniel Franke got back to me and
-walked me through the actual answer.&lt;&#x2F;p&gt;
+&lt;p&gt;I asked for help on Twitter.  Fortunately, Daniel Franke got back to me,
+looked at my busted code, and walked me through the actual answer.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;hold-the-future-or-the-reader-not-both&quot;&gt;Hold the future or the reader: not both!&lt;&#x2F;h1&gt;
-&lt;p&gt;Here&#x27;s the trick: We define an enum that holds the &lt;code&gt;DataReaderImpl&lt;&#x2F;code&gt; &lt;em&gt;or&lt;&#x2F;em&gt; the
-future that its &lt;code&gt;fill_buf&lt;&#x2F;code&gt; function returns, but not both at once.  That way,
-we never have a self-referential structure!&lt;&#x2F;p&gt;
+&lt;p&gt;Here&#x27;s the trick: We define an enum that holds the &lt;code&gt;DataReaderImpl&lt;&#x2F;code&gt; &lt;em&gt;or&lt;&#x2F;em&gt;
+the future that its &lt;code&gt;fill_buf&lt;&#x2F;code&gt; function returns, but &lt;em&gt;not both at once&lt;&#x2F;em&gt;.
+That way, we never have a self-referential structure!&lt;&#x2F;p&gt;
 &lt;p&gt;First we had to define a new variation on &lt;code&gt;fill_buf&lt;&#x2F;code&gt; that will take
-ownership of the reader, and pass it back once it&#x27;s done:&lt;&#x2F;p&gt;
+ownership of the reader when it&#x27;s called, and return ownership once it&#x27;s
+done:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
 &lt;code&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;impl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;DataReaderImpl {
     async &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;fn &lt;&#x2F;span&gt;&lt;span style=&quot;color:#8fa1b3;&quot;&gt;owning_fill_buf&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;(&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;mut &lt;&#x2F;span&gt;&lt;span style=&quot;color:#bf616a;&quot;&gt;self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;) -&amp;gt; (&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;Self&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;, io::Result&amp;lt;&lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;usize&lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;&amp;gt;) {
@@ -190,8 +199,8 @@ ownership of the reader, and pass it back once it&#x27;s done:&lt;&#x2F;p&gt;
 &lt;&#x2F;span&gt;&lt;&#x2F;code&gt;&lt;&#x2F;pre&gt;
 &lt;p&gt;Note that the &lt;code&gt;DataReader&lt;&#x2F;code&gt; struct holds an &lt;code&gt;Option&amp;lt;State&amp;gt;&lt;&#x2F;code&gt;—we&#x27;ll want
 to modify the state object destructively, so we&#x27;ll need to take ownership of
-it in &lt;code&gt;poll_read&lt;&#x2F;code&gt; and then replace it with something else.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#memswap&quot;&gt;4&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
-&lt;p&gt;With this groundwork in place we can finally give an implementation
+the state in &lt;code&gt;poll_read&lt;&#x2F;code&gt; and then replace it with something else.&lt;sup class=&quot;footnote-reference&quot;&gt;&lt;a href=&quot;#memswap&quot;&gt;5&lt;&#x2F;a&gt;&lt;&#x2F;sup&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;With this groundwork in place we could finally give an implementation
 of &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; that works:&lt;&#x2F;p&gt;
 &lt;pre style=&quot;background-color:#2b303b;&quot;&gt;
 &lt;code&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;impl &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;AsyncRead &lt;&#x2F;span&gt;&lt;span style=&quot;color:#b48ead;&quot;&gt;for &lt;&#x2F;span&gt;&lt;span style=&quot;color:#c0c5ce;&quot;&gt;DataReader {
@@ -253,15 +262,15 @@ of &lt;code&gt;AsyncRead&lt;&#x2F;code&gt; that works:&lt;&#x2F;p&gt;
 &lt;p&gt;Now when &lt;code&gt;poll_read()&lt;&#x2F;code&gt; takes ownership of the previous state,
 it either owns a &lt;code&gt;DataReaderImpl&lt;&#x2F;code&gt; or a future returned by
 &lt;code&gt;owning_fill_buf()&lt;&#x2F;code&gt;—but never both at once, so we don&#x27;t have any
-self-reference problems.  When it&#x27;s done, it has to put a new valid state
-back before it returns.&lt;&#x2F;p&gt;
+self-reference problems.  When &lt;code&gt;poll_read()&lt;&#x2F;code&gt; done, it has to put a new
+valid state back before it returns.&lt;&#x2F;p&gt;
 &lt;h1 id=&quot;conclusions&quot;&gt;Conclusions&lt;&#x2F;h1&gt;
 &lt;p&gt;For the current version of all this code, have a look at
 &lt;a href=&quot;https:&#x2F;&#x2F;gitlab.torproject.org&#x2F;tpo&#x2F;core&#x2F;arti&#x2F;-&#x2F;blob&#x2F;main&#x2F;tor-proto&#x2F;src&#x2F;stream&#x2F;data.rs&quot;&gt;&lt;code&gt;tor_proto::stream::data&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;
-in Arti.  Note that the Arti code is more complex than what I have in this
+in Arti.  Note that the code in Arti is more complex than what I have in this
 post, and some of that complexity is probably unnecessary: I&#x27;ve been learning
-as I go.&lt;&#x2F;p&gt;
-&lt;p&gt;I hope that someday there&#x27;s an easier way to do all of this (real
+more about Rust as I go along.&lt;&#x2F;p&gt;
+&lt;p&gt;I hope that some day there&#x27;s an easier way to do all of this (with real
 asynchronous traits, maybe?) but in the meantime, I hope that this write-up
 will be useful to somebody else.&lt;&#x2F;p&gt;
 &lt;hr &#x2F;&gt;
@@ -274,14 +283,18 @@ error as &lt;code&gt;Poll::Ready(Err(_)&lt;&#x2F;code&gt;.  But let&#x27;s keep 
 I was just trying to get it to work.  In the interest of clarity,
 I&#x27;ll leave it as inefficient code here too.&lt;&#x2F;p&gt;
 &lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;self-ref&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;didnthelp&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;3&lt;&#x2F;sup&gt;
+&lt;p&gt;It didn&#x27;t turn out to be what I needed in the end, but I&#x27;m glad I learned
+about it: it &lt;em&gt;has&lt;&#x2F;em&gt; been the answer for a lot of other problems later on.&lt;&#x2F;p&gt;
+&lt;&#x2F;div&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;self-ref&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;&#x2F;sup&gt;
 &lt;p&gt;Self-referential structures in Rust require &lt;code&gt;unsafe&lt;&#x2F;code&gt; code and pinning.
 I spent a semi-unpleasant hour or two looking through example
 code here just to see what would be involved, and tried learning
 the &lt;a href=&quot;https:&#x2F;&#x2F;docs.rs&#x2F;rental&#x2F;0.5.4&#x2F;rental&#x2F;&quot;&gt;rental&lt;&#x2F;a&gt; crate, in case
 it would help.&lt;&#x2F;p&gt;
 &lt;&#x2F;div&gt;
-&lt;div class=&quot;footnote-definition&quot; id=&quot;memswap&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;4&lt;&#x2F;sup&gt;
+&lt;div class=&quot;footnote-definition&quot; id=&quot;memswap&quot;&gt;&lt;sup class=&quot;footnote-definition-label&quot;&gt;5&lt;&#x2F;sup&gt;
 &lt;p&gt;We could probably use &lt;code&gt;std::mem::replace&lt;&#x2F;code&gt; for this too, but I don&#x27;t
 expect there would be a performance difference.&lt;&#x2F;p&gt;
 &lt;&#x2F;div&gt;

@@ -90,9 +90,9 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-8 col-md-10 mx-auto">
-        <p>Because doesn't yet support
-<a href="https://smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-are-hard/">asynchronous functions in traits</a>,
-several important traits (like
+        <p>Rust doesn't yet support
+<a href="https://smallcultfollowing.com/babysteps/blog/2019/10/26/async-fn-in-traits-are-hard/">asynchronous functions in traits</a>, but
+several important async-related traits (like
 <a href="https://docs.rs/futures/0.3.14/futures/io/trait.AsyncRead.html"><code>AsyncRead</code></a>
 and <a href="https://docs.rs/futures/0.3.14/futures/stream/trait.Stream.html"><code>Stream</code></a> )
 define their interface using functions that return
@@ -100,10 +100,11 @@ define their interface using functions that return
 you do when you have a function that <em>is</em> async, and you need to use it to
 implement one of these traits?</p>
 <span id="continue-reading"></span>
-<p>(I'll be assuming that you already know a little about pinning,
-pin-projection, futures, and async programming in Rust: not because they're
-easy topics, but because I'm still learning them myself, and I don't
-understand them well enough be a good teacher.)</p>
+<p>(I'll be assuming that you already know a little about pinning, futures,
+and async programming in Rust. That's not because they're easy
+“everybody-should-know-it” topics, but because I'm still learning them
+myself, and I don't understand them well enough be a good teacher. You
+can probably keep reading if you don't understand them well . )</p>
 <h1 id="a-little-background">A little background</h1>
 <p>Here's a situation I ran into earlier this year.  In the end, I only
 solved it with help from
@@ -123,17 +124,18 @@ type that provides an anonymous connection over the Tor network:</p>
     { ... }
 }
 </span></code></pre>
-<p>Now, there's a lot of complexity hiding in those ellipses.  A Tor
-implementation that's trying to read may need to wait for data to arrive.  It
-may also need to <em>send</em> messages in response to arriving data, update
-internal state, and all kinds of delightful stuff.  So rewriting those
-functions as explicitly returning a typed future was <em>not</em> an option.</p>
-<p>But I wanted <code>DataStream</code> to implement <code>AsyncRead</code> and <code>AsyncWrite</code>, so it
-can be used with other code in the Rust async ecosystem.  That way,
-integrating other Rust programs with Arti will be as simple as teaching them
-to construct a <code>DataStream</code> in place of a <code>TcpStream</code>.</p>
-<p>Let's look at <code>AsyncRead</code>: it's simpler than <code>AsyncWrite</code>.  The only required
-method in <code>AsyncRead</code> is:</p>
+<p>Now, there's a lot of complexity hiding in those ellipses.  Tor isn't
+a simple protocol: when it's trying to read, it may need to wait for data
+to arrive.  It may also need to <em>send</em> messages in response to arriving
+data. It might need to update
+internal state, or even tear down an entire Tor circuit because of a
+protocol error. Async functions made it possible to implement all of
+this stuff in a more-or-less comprehensible way, so rewriting those
+functions to explicitly return a typed future was <em>not</em> an option.</p>
+<p>But I wanted <code>DataStream</code> to implement <code>AsyncRead</code> and <code>AsyncWrite</code>, so
+I could use it with other code in the Rust async ecosystem.  So let's
+look at <code>AsyncRead</code> (because it's simpler than <code>AsyncWrite</code>).  The only
+required method in <code>AsyncRead</code> is:</p>
 <pre style="background-color:#2b303b;">
 <code><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">poll_read</span><span style="color:#c0c5ce;">(
     </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">: Pin&lt;&amp;</span><span style="color:#b48ead;">mut Self</span><span style="color:#c0c5ce;">&gt;,
@@ -141,17 +143,19 @@ method in <code>AsyncRead</code> is:</p>
     </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> [</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]
 ) -&gt; Poll&lt;io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;&gt;
 </span></code></pre>
-<p>This <code>read</code> has to check whether there's any data that can be read into <code>buf</code>
+<p>This <code>read()</code> has to check whether there's data can be read into <code>buf</code>
 immediately, without blocking.  If there is, we read the data and
-return the number of bytes read.  Otherwise, we have to schedule ourself on
+return the number of bytes we read.  Otherwise, we have to schedule ourself on
 <code>cx</code>, and return <code>Poll::Pending</code>.<sup class="footnote-reference"><a href="#other-read-results">1</a></sup></p>
+<h1 id="moving-forward-getting-stuck">Moving forward, getting stuck</h1>
 <p>Compare <code>poll_read</code> to the <code>read</code> function in <code>DataStream</code>.  First off,
-there's a mismatch between how these two functions use their output buffers.
-Because <code>DataStream::read</code> is async, it returns a future that will hang on to
-its buffer until the future is finally ready.  But <code>poll_read</code> has to returns
-right away, and it can't hang on to its buffer at all.  So I started by
-defining a wrapper variant of <code>DataStream</code> to implements the behavior that
-<code>poll_read</code> would need:<sup class="footnote-reference"><a href="#inefficient">2</a></sup></p>
+there's a mismatch between how these two functions use their output
+buffers.  Because <code>DataStream::read</code> is async, it returns a future that
+will hang on to its buffer until the future is finally ready.  But
+<code>poll_read</code> has to return right away, and it can't store a reference to
+its buffer at all.  So I started by defining a wrapper variant of
+<code>DataStream</code> to implements the behavior that <code>poll_read</code> would
+need:<sup class="footnote-reference"><a href="#inefficient">2</a></sup></p>
 <pre style="background-color:#2b303b;">
 <code><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">DataReaderImpl {
     </span><span style="color:#bf616a;">s</span><span style="color:#c0c5ce;">: DataStream,
@@ -170,13 +174,15 @@ defining a wrapper variant of <code>DataStream</code> to implements the behavior
             pending: Vec::new(),
         }
     }
-    async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">fill_buf</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt; {
+    </span><span style="color:#65737e;">// Load up to 1k into the pending buffer.
+</span><span style="color:#c0c5ce;">    async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">fill_buf</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt; {
         </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> data = vec![</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;</span><span style="color:#d08770;">1024</span><span style="color:#c0c5ce;">];
         </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> len = </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.s.</span><span style="color:#96b5b4;">read</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> data[..]).await?;
         data.</span><span style="color:#96b5b4;">truncate</span><span style="color:#c0c5ce;">(len);
         </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending.</span><span style="color:#96b5b4;">extend</span><span style="color:#c0c5ce;">(data);
         Ok(len)
     }
+    </span><span style="color:#65737e;">// pull bytes from the pending buffer into `buf`.
     </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">extract_bytes</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> [</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]) -&gt; </span><span style="color:#b48ead;">usize </span><span style="color:#c0c5ce;">{
         </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = cmp::min(buf.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">(), </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">());
         buf[..n].</span><span style="color:#96b5b4;">copy_from_slice</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending[..n]);
@@ -185,8 +191,8 @@ defining a wrapper variant of <code>DataStream</code> to implements the behavior
     }
 }
 </span></code></pre>
-<p>Then, I thought, it ought to be easy to write <code>AsyncRead</code>!  Here was my first
-try:</p>
+<p>Then, I thought, it ought to be easy to write <code>AsyncRead</code>!  Here was my
+first try:</p>
 <pre style="background-color:#2b303b;">
 <code><span style="color:#65737e;">// This won&#39;t work...
 </span><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">AsyncRead </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">DataReaderImpl {
@@ -205,8 +211,8 @@ try:</p>
                         </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Poll::Ready(Ok(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)); </span><span style="color:#65737e;">// EOF
                     </span><span style="color:#c0c5ce;">}
                 Poll::Pending =&gt;
-                    todo!(&quot;</span><span style="color:#a3be8c;">crud, where do i put the future?</span><span style="color:#c0c5ce;">&quot;),
-            }
+                    todo!(&quot;</span><span style="color:#a3be8c;">crud, where do i put the future?</span><span style="color:#c0c5ce;">&quot;), </span><span style="color:#65737e;">// XXXX
+            </span><span style="color:#c0c5ce;">}
         }
 
         </span><span style="color:#65737e;">// We have some data; move it out to the caller.
@@ -215,35 +221,38 @@ try:</p>
     }
 }
 </span></code></pre>
-<p>So far, so good!  But do I do if the future says it's pending?  I need to
-store it and poll it again later the next time I call this function.  But to
-do that, I won't be able to pin it to the stack!  I'll have to store it in
-the structure instead.  And since it comes from an async function, it won't
-have a type that I can name; I'll have to store it as a <code>Box&lt;dyn Future&gt;</code>.</p>
-<p>Oh hang on, it'll need to be pinned. And sometimes I won't have a future at
-all.  Maybe I store it in an <code>Option&lt;Pin&lt;Box&lt;dyn Future&gt;&gt;&gt;</code>?</p>
+<p>Almost there!  But what do I do if the future says it's pending?  I need
+to store it and poll it again later the next time I call this function.
+But to do <em>that</em>, I won't be able to pin the future to the stack!  I'll
+have to store it in the structure instead.  And since the future comes
+from an async function, it won't have a type that I can name; I'll have
+to store it as a <code>Box&lt;dyn Future&gt;</code>.</p>
+<p>Oh hang on, it'll need to be pinned. And sometimes there won't be a read
+in progress, so I won't have a future at
+all. Maybe I store it in an <code>Option&lt;Pin&lt;Box&lt;dyn Future&gt;&gt;&gt;</code>?</p>
 <p>(This is the point where I had to take a break and figure out
-<a href="https://docs.rs/pin-project/1.0.7/pin_project/index.html">pin-projection</a>.)</p>
+<a href="https://docs.rs/pin-project/1.0.7/pin_project/index.html">pin-projection</a><sup class="footnote-reference"><a href="#didnthelp">3</a></sup>.)</p>
 <p>But after I played around with <em>that</em> for a while, I hit the final snag:
 ultimately, I was trying to create a
-<a href="https://boats.gitlab.io/blog/post/2018-01-25-async-i-self-referential-structs/#self-referential-structs">self-referential structure</a><sup class="footnote-reference"><a href="#self-ref">3</a></sup>,
+<a href="https://boats.gitlab.io/blog/post/2018-01-25-async-i-self-referential-structs/#self-referential-structs">self-referential structure</a><sup class="footnote-reference"><a href="#self-ref">4</a></sup>,
 which you can't do in safe Rust.
 You see, the future returned by <code>DataReaderImpl::fill_buf</code> needs to hold a
 reference to the <code>DataReaderImpl</code>, and so the future needs to <em>outlive</em> the
-DataReaderImpl.  That means you can't store it in the DataReaderImpl.  You
-can't even store it and the DataReaderImpl in the same struct: that creates
+<code>DataReaderImpl</code>.  That means you can't store it in the DataReaderImpl.  You
+can't even store it and the <code>DataReaderImpl</code> in the same struct: that creates
 self-reference.</p>
 <p>So what could I do?  Was I supposed to use unsafe code or some tricky
 crate to make a self-referential struct anyway?  Was my solution
 fundamentally flawed?  Was I even trying to do something possible‽</p>
-<p>I asked for help on Twitter.  Fortunately, Daniel Franke got back to me and
-walked me through the actual answer.</p>
+<p>I asked for help on Twitter.  Fortunately, Daniel Franke got back to me,
+looked at my busted code, and walked me through the actual answer.</p>
 <h1 id="hold-the-future-or-the-reader-not-both">Hold the future or the reader: not both!</h1>
-<p>Here's the trick: We define an enum that holds the <code>DataReaderImpl</code> <em>or</em> the
-future that its <code>fill_buf</code> function returns, but not both at once.  That way,
-we never have a self-referential structure!</p>
+<p>Here's the trick: We define an enum that holds the <code>DataReaderImpl</code> <em>or</em>
+the future that its <code>fill_buf</code> function returns, but <em>not both at once</em>.
+That way, we never have a self-referential structure!</p>
 <p>First we had to define a new variation on <code>fill_buf</code> that will take
-ownership of the reader, and pass it back once it's done:</p>
+ownership of the reader when it's called, and return ownership once it's
+done:</p>
 <pre style="background-color:#2b303b;">
 <code><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">DataReaderImpl {
     async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">owning_fill_buf</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; (</span><span style="color:#b48ead;">Self</span><span style="color:#c0c5ce;">, io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;) {
@@ -267,8 +276,8 @@ ownership of the reader, and pass it back once it's done:</p>
 </span></code></pre>
 <p>Note that the <code>DataReader</code> struct holds an <code>Option&lt;State&gt;</code>—we'll want
 to modify the state object destructively, so we'll need to take ownership of
-it in <code>poll_read</code> and then replace it with something else.<sup class="footnote-reference"><a href="#memswap">4</a></sup></p>
-<p>With this groundwork in place we can finally give an implementation
+the state in <code>poll_read</code> and then replace it with something else.<sup class="footnote-reference"><a href="#memswap">5</a></sup></p>
+<p>With this groundwork in place we could finally give an implementation
 of <code>AsyncRead</code> that works:</p>
 <pre style="background-color:#2b303b;">
 <code><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">AsyncRead </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">DataReader {
@@ -330,15 +339,15 @@ of <code>AsyncRead</code> that works:</p>
 <p>Now when <code>poll_read()</code> takes ownership of the previous state,
 it either owns a <code>DataReaderImpl</code> or a future returned by
 <code>owning_fill_buf()</code>—but never both at once, so we don't have any
-self-reference problems.  When it's done, it has to put a new valid state
-back before it returns.</p>
+self-reference problems.  When <code>poll_read()</code> done, it has to put a new
+valid state back before it returns.</p>
 <h1 id="conclusions">Conclusions</h1>
 <p>For the current version of all this code, have a look at
 <a href="https://gitlab.torproject.org/tpo/core/arti/-/blob/main/tor-proto/src/stream/data.rs"><code>tor_proto::stream::data</code></a>
-in Arti.  Note that the Arti code is more complex than what I have in this
+in Arti.  Note that the code in Arti is more complex than what I have in this
 post, and some of that complexity is probably unnecessary: I've been learning
-as I go.</p>
-<p>I hope that someday there's an easier way to do all of this (real
+more about Rust as I go along.</p>
+<p>I hope that some day there's an easier way to do all of this (with real
 asynchronous traits, maybe?) but in the meantime, I hope that this write-up
 will be useful to somebody else.</p>
 <hr />
@@ -351,14 +360,18 @@ error as <code>Poll::Ready(Err(_)</code>.  But let's keep this simple.</p>
 I was just trying to get it to work.  In the interest of clarity,
 I'll leave it as inefficient code here too.</p>
 </div>
-<div class="footnote-definition" id="self-ref"><sup class="footnote-definition-label">3</sup>
+<div class="footnote-definition" id="didnthelp"><sup class="footnote-definition-label">3</sup>
+<p>It didn't turn out to be what I needed in the end, but I'm glad I learned
+about it: it <em>has</em> been the answer for a lot of other problems later on.</p>
+</div>
+<div class="footnote-definition" id="self-ref"><sup class="footnote-definition-label">4</sup>
 <p>Self-referential structures in Rust require <code>unsafe</code> code and pinning.
 I spent a semi-unpleasant hour or two looking through example
 code here just to see what would be involved, and tried learning
 the <a href="https://docs.rs/rental/0.5.4/rental/">rental</a> crate, in case
 it would help.</p>
 </div>
-<div class="footnote-definition" id="memswap"><sup class="footnote-definition-label">4</sup>
+<div class="footnote-definition" id="memswap"><sup class="footnote-definition-label">5</sup>
 <p>We could probably use <code>std::mem::replace</code> for this too, but I don't
 expect there would be a performance difference.</p>
 </div>
