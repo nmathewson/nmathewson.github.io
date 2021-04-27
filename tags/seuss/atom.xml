@@ -2,17 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 	<title>inter allia - seuss</title>
 	<subtitle>adventures among the onions</subtitle>
-	<link href="https://inter-allia.net/tags/seuss/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://inter-allia.net"/>
+	<link href="https://www.inter-allia.net/tags/seuss/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://www.inter-allia.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2021-04-26T00:00:00+00:00</updated>
-	<id>https://inter-allia.net/tags/seuss/atom.xml</id>
+	<id>https://www.inter-allia.net/tags/seuss/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Lorax Ipsum</title>
 		<published>2021-04-26T00:00:00+00:00</published>
 		<updated>2021-04-26T00:00:00+00:00</updated>
-		<link href="https://inter-allia.net/lorax-ipsum/" type="text/html"/>
-		<id>https://inter-allia.net/lorax-ipsum/</id>
+		<link href="https://www.inter-allia.net/lorax-ipsum/" type="text/html"/>
+		<id>https://www.inter-allia.net/lorax-ipsum/</id>
 		<content type="html">&lt;p&gt;Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
 barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
 enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris

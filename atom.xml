@@ -2,17 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 	<title>inter allia</title>
 	<subtitle>adventures among the onions</subtitle>
-	<link href="https://inter-allia.net/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://inter-allia.net"/>
+	<link href="https://www.inter-allia.net/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://www.inter-allia.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2021-04-27T00:00:00+00:00</updated>
-	<id>https://inter-allia.net/atom.xml</id>
+	<id>https://www.inter-allia.net/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Implementing Rust futures when you only have async functions</title>
 		<published>2021-04-27T00:00:00+00:00</published>
 		<updated>2021-04-27T00:00:00+00:00</updated>
-		<link href="https://inter-allia.net/async-into-future/" type="text/html"/>
-		<id>https://inter-allia.net/async-into-future/</id>
+		<link href="https://www.inter-allia.net/async-into-future/" type="text/html"/>
+		<id>https://www.inter-allia.net/async-into-future/</id>
 		<content type="html">&lt;p&gt;Because doesn&#x27;t yet support
 &lt;a href=&quot;https:&#x2F;&#x2F;smallcultfollowing.com&#x2F;babysteps&#x2F;blog&#x2F;2019&#x2F;10&#x2F;26&#x2F;async-fn-in-traits-are-hard&#x2F;&quot;&gt;asynchronous functions in traits&lt;&#x2F;a&gt;,
 several important traits (like
@@ -291,8 +291,8 @@ expect there would be a performance difference.&lt;&#x2F;p&gt;
 		<title>Contacting me</title>
 		<published>2021-04-26T00:00:00+00:00</published>
 		<updated>2021-04-26T00:00:00+00:00</updated>
-		<link href="https://inter-allia.net/contact/" type="text/html"/>
-		<id>https://inter-allia.net/contact/</id>
+		<link href="https://www.inter-allia.net/contact/" type="text/html"/>
+		<id>https://www.inter-allia.net/contact/</id>
 		<content type="html">&lt;p&gt;For work:  email me at &lt;code&gt;nickm atsign torproject dot org&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;Not for work: email me at &lt;code&gt;nickm atsign alum dot mit dot edu&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;(If you use gpg, it will take me a few extra days to get around to your
@@ -309,8 +309,8 @@ email.)&lt;&#x2F;p&gt;
 		<title>Lorax Ipsum</title>
 		<published>2021-04-26T00:00:00+00:00</published>
 		<updated>2021-04-26T00:00:00+00:00</updated>
-		<link href="https://inter-allia.net/lorax-ipsum/" type="text/html"/>
-		<id>https://inter-allia.net/lorax-ipsum/</id>
+		<link href="https://www.inter-allia.net/lorax-ipsum/" type="text/html"/>
+		<id>https://www.inter-allia.net/lorax-ipsum/</id>
 		<content type="html">&lt;p&gt;Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
 barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
 enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris

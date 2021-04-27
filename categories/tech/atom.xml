@@ -2,17 +2,17 @@
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
 	<title>inter allia - tech</title>
 	<subtitle>adventures among the onions</subtitle>
-	<link href="https://inter-allia.net/categories/tech/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://inter-allia.net"/>
+	<link href="https://www.inter-allia.net/categories/tech/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://www.inter-allia.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2021-04-27T00:00:00+00:00</updated>
-	<id>https://inter-allia.net/categories/tech/atom.xml</id>
+	<id>https://www.inter-allia.net/categories/tech/atom.xml</id>
 	<entry xml:lang="en">
 		<title>Implementing Rust futures when you only have async functions</title>
 		<published>2021-04-27T00:00:00+00:00</published>
 		<updated>2021-04-27T00:00:00+00:00</updated>
-		<link href="https://inter-allia.net/async-into-future/" type="text/html"/>
-		<id>https://inter-allia.net/async-into-future/</id>
+		<link href="https://www.inter-allia.net/async-into-future/" type="text/html"/>
+		<id>https://www.inter-allia.net/async-into-future/</id>
 		<content type="html">&lt;p&gt;Because doesn&#x27;t yet support
 &lt;a href=&quot;https:&#x2F;&#x2F;smallcultfollowing.com&#x2F;babysteps&#x2F;blog&#x2F;2019&#x2F;10&#x2F;26&#x2F;async-fn-in-traits-are-hard&#x2F;&quot;&gt;asynchronous functions in traits&lt;&#x2F;a&gt;,
 several important traits (like

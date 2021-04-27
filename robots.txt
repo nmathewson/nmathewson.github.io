@@ -1,2 +1,2 @@
 User-agent: *
-Sitemap: https://inter-allia.net/sitemap.xml
+Sitemap: https://www.inter-allia.net/sitemap.xml
