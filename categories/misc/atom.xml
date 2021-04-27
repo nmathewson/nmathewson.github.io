@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>inter allia - misc</title>
+	<subtitle>adventures among the onions</subtitle>
+	<link href="https://inter-allia.net/categories/misc/atom.xml" rel="self" type="application/atom+xml"/>
+	<link href="https://inter-allia.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-04-26T00:00:00+00:00</updated>
+	<id>https://inter-allia.net/categories/misc/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Lorax Ipsum</title>
+		<published>2021-04-26T00:00:00+00:00</published>
+		<updated>2021-04-26T00:00:00+00:00</updated>
+		<link href="https://inter-allia.net/lorax-ipsum/" type="text/html"/>
+		<id>https://inter-allia.net/lorax-ipsum/</id>
+		<content type="html">&lt;p&gt;Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
+barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
+enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
+nisi ut cruffulus ex ea schloppity consequat. &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt; Duis aute
+snarggle in swomeeswans in voluptate axe-hacker esse rippulus crummii
+eu moof nulla snuvv.&lt;&#x2F;p&gt;
+&lt;p&gt;Barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
+enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
+nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
+swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
+nulla snuvv.
+Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
+barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
+enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
+nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
+swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
+nulla snuvv.&lt;&#x2F;p&gt;
+&lt;p&gt;Ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
+nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
+swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
+nulla snuvv.
+Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
+barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
+enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
+nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
+swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
+nulla snuvv.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;By the way, be careful when you tweet the
+&amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;loremipsum.io&#x2F;&quot;&gt;&lt;em&gt;lorem ipsum&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;&amp;quot; text or anything like it.  I
+did so once, and immediately got followed by dozens of maddened
+spambots.&lt;&#x2F;p&gt;
+&lt;p&gt;My working theory is:&lt;&#x2F;p&gt;
+&lt;ol&gt;
+&lt;li&gt;Somebody is selling a spambot that the user needs
+to configure with a list of search terms.&lt;&#x2F;li&gt;
+&lt;li&gt;The default list of search terms includes some or all of the &lt;em&gt;lorem
+ipsum&lt;&#x2F;em&gt; text.&lt;&#x2F;li&gt;
+&lt;li&gt;At least some users never actually change the configuration.&lt;&#x2F;li&gt;
+&lt;&#x2F;ol&gt;
+&lt;p&gt;This was a few years back, so maybe those bots are gone now.  Why not
+tweet some &lt;em&gt;lorem ipsum&lt;&#x2F;em&gt; and find out?&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>

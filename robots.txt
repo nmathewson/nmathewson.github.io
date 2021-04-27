@@ -1,0 +1,2 @@
+User-agent: *
+Sitemap: https://inter-allia.net/sitemap.xml
