@@ -27,6 +27,10 @@
         <lastmod>2021-04-26</lastmod>
     </url>
     <url>
+        <loc>https://www.inter-allia.net/gettin-vaccinated/</loc>
+        <lastmod>2021-04-30</lastmod>
+    </url>
+    <url>
         <loc>https://www.inter-allia.net/lorax-ipsum/</loc>
         <lastmod>2021-04-26</lastmod>
     </url>
@@ -35,6 +39,12 @@
     </url>
     <url>
         <loc>https://www.inter-allia.net/tags/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/health/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/health/page/1/</loc>
     </url>
     <url>
         <loc>https://www.inter-allia.net/tags/junk/</loc>
@@ -49,6 +59,24 @@
         <loc>https://www.inter-allia.net/tags/latin/page/1/</loc>
     </url>
     <url>
+        <loc>https://www.inter-allia.net/tags/music/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/music/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/parody/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/parody/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/punk/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/punk/page/1/</loc>
+    </url>
+    <url>
         <loc>https://www.inter-allia.net/tags/rust/</loc>
     </url>
     <url>
@@ -59,5 +87,11 @@
     </url>
     <url>
         <loc>https://www.inter-allia.net/tags/seuss/page/1/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/verse/</loc>
+    </url>
+    <url>
+        <loc>https://www.inter-allia.net/tags/verse/page/1/</loc>
     </url>
 </urlset>
