@@ -3,7 +3,7 @@
 	<title>inter allia - verse</title>
 	<subtitle>adventures among the onions</subtitle>
 	<link href="https://www.inter-allia.net/tags/verse/atom.xml" rel="self" type="application/atom+xml"/>
-	<link href="https://www.inter-allia.net"/>
+  <link href="https://www.inter-allia.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
 	<updated>2021-04-30T00:00:00+00:00</updated>
 	<id>https://www.inter-allia.net/tags/verse/atom.xml</id>
@@ -14,7 +14,7 @@
 		<link href="https://www.inter-allia.net/gettin-vaccinated/" type="text/html"/>
 		<id>https://www.inter-allia.net/gettin-vaccinated/</id>
 		<content type="html">&lt;p&gt;20-20-24 hours to go,&lt;br &#x2F;&gt;
-I&#x27;m getting vaccinated&lt;br &#x2F;&gt;
+I&#x27;m getting vaccinated,&lt;br &#x2F;&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;www.mass.gov&#x2F;info-details&#x2F;covid-19-updates-and-information&quot;&gt;Nothing to do, nowhere to go&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
 Till I get vaccinated&lt;&#x2F;p&gt;
 &lt;p&gt;So stick me with a &lt;a href=&quot;https:&#x2F;&#x2F;berthub.eu&#x2F;articles&#x2F;11889.doc&quot;&gt;sequence&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;

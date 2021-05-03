@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
+	<title>inter allia - misc</title>
+	<subtitle>adventures among the onions</subtitle>
+	<link href="https://www.inter-allia.net/tags/misc/atom.xml" rel="self" type="application/atom+xml"/>
+  <link href="https://www.inter-allia.net"/>
+	<generator uri="https://www.getzola.org/">Zola</generator>
+	<updated>2021-05-03T00:00:00+00:00</updated>
+	<id>https://www.inter-allia.net/tags/misc/atom.xml</id>
+	<entry xml:lang="en">
+		<title>Learning The Alphabet</title>
+		<published>2021-05-03T00:00:00+00:00</published>
+		<updated>2021-05-03T00:00:00+00:00</updated>
+		<link href="https://www.inter-allia.net/learning-alphabet/" type="text/html"/>
+		<id>https://www.inter-allia.net/learning-alphabet/</id>
+		<content type="html">&lt;p&gt;A for Paper.&lt;&#x2F;p&gt;
+&lt;p&gt;B for Dam.&lt;&#x2F;p&gt;
+&lt;p&gt;C for Explosive.&lt;&#x2F;p&gt;
+&lt;p&gt;D for a Station.&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
+&lt;p&gt;E for Diethel.&lt;&#x2F;p&gt;
+&lt;p&gt;F for International.&lt;&#x2F;p&gt;
+&lt;p&gt;G for Says.&lt;&#x2F;p&gt;
+&lt;p&gt;H for Majority.&lt;&#x2F;p&gt;
+&lt;p&gt;I for the Engine Driver.&lt;&#x2F;p&gt;
+&lt;p&gt;J for Passing.&lt;&#x2F;p&gt;
+&lt;p&gt;K for Spelunking.&lt;&#x2F;p&gt;
+&lt;p&gt;L for Hobbit.&lt;&#x2F;p&gt;
+&lt;p&gt;M for Zima.&lt;&#x2F;p&gt;
+&lt;p&gt;N for Rents.&lt;&#x2F;p&gt;
+&lt;p&gt;O for Tuna.&lt;&#x2F;p&gt;
+&lt;p&gt;P for a Drug Test.&lt;&#x2F;p&gt;
+&lt;p&gt;Q for Billiards.&lt;&#x2F;p&gt;
+&lt;p&gt;R for King of the Britons.&lt;&#x2F;p&gt;
+&lt;p&gt;S for Dad.&lt;&#x2F;p&gt;
+&lt;p&gt;T for Lymphocyte.&lt;&#x2F;p&gt;
+&lt;p&gt;U for Rhea.&lt;&#x2F;p&gt;
+&lt;p&gt;V for La Revolucion.&lt;&#x2F;p&gt;
+&lt;p&gt;W for Form.&lt;&#x2F;p&gt;
+&lt;p&gt;X for Sensory.&lt;&#x2F;p&gt;
+&lt;p&gt;Y for Goodness Sake.&lt;&#x2F;p&gt;
+&lt;p&gt;Z for Wroth.&lt;&#x2F;p&gt;
+&lt;hr &#x2F;&gt;
+&lt;p&gt;Variations on this theme have been done for a long time, sometimes called
+&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Cockney_Alphabet&quot;&gt;The Cockney Alphabet&lt;&#x2F;a&gt; or
+&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=QOheO48o5wE&quot;&gt;A Surrealist Alphabet&lt;&#x2F;a&gt;.  I
+first saw it done in &lt;em&gt;I Saw Esau&lt;&#x2F;em&gt; by Opie &amp;amp; Opie.&lt;&#x2F;p&gt;
+</content>
+	</entry>
+</feed>
