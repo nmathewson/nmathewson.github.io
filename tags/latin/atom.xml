@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>inter allia - latin</title>
-	<subtitle>adventures among the onions</subtitle>
+	<title>inter-allia.net - latin</title>
+	<subtitle>nick’s adventures among the onions</subtitle>
 	<link href="https://www.inter-allia.net/tags/latin/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.inter-allia.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>

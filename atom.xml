@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>inter allia</title>
-	<subtitle>adventures among the onions</subtitle>
+	<title>inter-allia.net</title>
+	<subtitle>nick’s adventures among the onions</subtitle>
 	<link href="https://www.inter-allia.net/atom.xml" rel="self" type="application/atom+xml"/>
   <link href="https://www.inter-allia.net"/>
 	<generator uri="https://www.getzola.org/">Zola</generator>
@@ -17,6 +17,7 @@
 Yeah she eats steel nails, shits &#x27;em out galvanized&lt;br &#x2F;&gt;
 Now she&#x27;s not safe for people with nut allergies&lt;br &#x2F;&gt;
 And she runs on the cloud, but she&#x27;s always a woman to me&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;She can call on strange beings from the vastiest deep&lt;br &#x2F;&gt;
 And she mumbles sestinas each night in her sleep&lt;br &#x2F;&gt;
 Yeah she burns Grover Cleveland in straw effigy&lt;br &#x2F;&gt;
@@ -86,6 +87,7 @@ first saw it done in &lt;em&gt;I Saw Esau&lt;&#x2F;em&gt; by Opie &amp;amp; Opie
 I&#x27;m getting vaccinated,&lt;br &#x2F;&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;www.mass.gov&#x2F;info-details&#x2F;covid-19-updates-and-information&quot;&gt;Nothing to do, nowhere to go&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
 Till I get vaccinated&lt;&#x2F;p&gt;
+&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
 &lt;p&gt;So stick me with a &lt;a href=&quot;https:&#x2F;&#x2F;berthub.eu&#x2F;articles&#x2F;11889.doc&quot;&gt;sequence&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
 and let it take effect&lt;br &#x2F;&gt;
 I&#x27;ll make some &lt;a href=&quot;https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41401-020-0485-4&quot;&gt;spiky proteins&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
@@ -413,8 +415,9 @@ expect there would be a performance difference.&lt;&#x2F;p&gt;
 &lt;p&gt;(If you use gpg, it will take me a few extra days to get around to your
 email.)&lt;&#x2F;p&gt;
 &lt;p&gt;Send ALL press inquiries to &lt;code&gt;press at torproject dot org&lt;&#x2F;code&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;You can find me as &lt;code&gt;nickm&lt;&#x2F;code&gt; on IRC at OFTC.net.&lt;&#x2F;p&gt;
-&lt;p&gt;If you want to get to me in public, I&#x27;m on twitter as
+&lt;p&gt;You can find me as &lt;code&gt;nickm&lt;&#x2F;code&gt; on IRC at &lt;a href=&quot;https:&#x2F;&#x2F;oftc.net&#x2F;&quot;&gt;OFTC.net&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;p&gt;You can find me on Mastodon as &lt;a href=&quot;https:&#x2F;&#x2F;mastodon.lol&#x2F;@nickm_tor&quot;&gt;&lt;code&gt;@nickm_tor@mastodon.lol&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;p&gt;Until it finally crashes into the ocean, I&#x27;m on twitter as
 &lt;a href=&quot;https:&#x2F;&#x2F;twitter.com&#x2F;nickm_tor&quot;&gt;&lt;code&gt;nickm_tor&lt;&#x2F;code&gt;&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;You can find my older website at &lt;a href=&quot;http:&#x2F;&#x2F;www.wangafu.net&#x2F;%7Enickm&#x2F;&quot;&gt;wangafu.net&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
 &lt;p&gt;—nickm&lt;&#x2F;p&gt;
