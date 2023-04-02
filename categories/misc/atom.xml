@@ -1,19 +1,52 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom" xml:lang="en">
-	<title>inter-allia.net - misc</title>
-	<subtitle>nick’s adventures among the onions</subtitle>
-	<link href="https://www.inter-allia.net/categories/misc/atom.xml" rel="self" type="application/atom+xml"/>
-  <link href="https://www.inter-allia.net"/>
-	<generator uri="https://www.getzola.org/">Zola</generator>
-	<updated>2022-11-19T00:00:00+00:00</updated>
-	<id>https://www.inter-allia.net/categories/misc/atom.xml</id>
-	<entry xml:lang="en">
-		<title>You Are Old, Giovanni</title>
-		<published>2022-11-19T00:00:00+00:00</published>
-		<updated>2022-11-19T00:00:00+00:00</updated>
-		<link href="https://www.inter-allia.net/you-are-old-giovanni/" type="text/html"/>
-		<id>https://www.inter-allia.net/you-are-old-giovanni/</id>
-		<content type="html">&lt;p&gt;“You are old, Giovanni, the richest of men,&lt;br &#x2F;&gt;
+    <title>inter-allia.net - misc</title>
+    <subtitle>nick’s adventures among the onions</subtitle>
+    <link href="https://www.inter-allia.net/categories/misc/atom.xml" rel="self" type="application/atom+xml"/>
+    <link href="https://www.inter-allia.net"/>
+    <generator uri="https://www.getzola.org/">Zola</generator>
+    <updated>2023-04-02T00:00:00+00:00</updated>
+    <id>https://www.inter-allia.net/categories/misc/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Stopping by Mordor</title>
+        <published>2023-04-02T00:00:00+00:00</published>
+        <updated>2023-04-02T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/stopping-by-mordor/" type="text/html"/>
+        <id>https://www.inter-allia.net/stopping-by-mordor/</id>
+        
+        <content type="html">&lt;p&gt;Whose rings these are, I think I know.&lt;br &#x2F;&gt;
+They&#x27;ve all come back to Mordor, though,&lt;br &#x2F;&gt;
+Except the Elvish Three—and Mine,&lt;br &#x2F;&gt;
+Whose whereabouts I&#x27;d like to know!&lt;&#x2F;p&gt;
+&lt;p&gt;My flunkies I must reassign&lt;br &#x2F;&gt;
+From wonted quotas of rapine&lt;br &#x2F;&gt;
+To hunt for bumpkins from the “Shire”&lt;br &#x2F;&gt;
+While I, back home, grow saturnine.&lt;&#x2F;p&gt;
+&lt;p&gt;Foes slink to Gondor and conspire&lt;br &#x2F;&gt;
+As if they didn&#x27;t fear my ire!&lt;br &#x2F;&gt;
+I&#x27;ll extirpate their sad cabal&lt;br &#x2F;&gt;
+In Udûn, and the cracks of fire.&lt;&#x2F;p&gt;
+&lt;p&gt;These rings are lovely in my thrall:&lt;br &#x2F;&gt;
+One more will be the wherewithal&lt;br &#x2F;&gt;
+To rule and bring and find them all&lt;br &#x2F;&gt;
+And in the darkness bind them all.&lt;&#x2F;p&gt;
+</content>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>You Are Old, Giovanni</title>
+        <published>2022-11-19T00:00:00+00:00</published>
+        <updated>2022-11-19T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/you-are-old-giovanni/" type="text/html"/>
+        <id>https://www.inter-allia.net/you-are-old-giovanni/</id>
+        
+        <summary type="html">&lt;p&gt;“You are old, Giovanni, the richest of men,&lt;br &#x2F;&gt;
 Also old, as I’m forced to repeat,&lt;br &#x2F;&gt;
 Since your arch-nemesis is a child of ten,&lt;br &#x2F;&gt;
 Whom you never can seem to defeat.”&lt;&#x2F;p&gt;
@@ -21,189 +54,74 @@ Whom you never can seem to defeat.”&lt;&#x2F;p&gt;
  Beat my pidgey, which still makes me wince:&lt;br &#x2F;&gt;
  And my infamous schemes have been driven by rage&lt;br &#x2F;&gt;
  Against children of ten ever since.”&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;“You are old, Giovanni, ambitious and cold,&lt;br &#x2F;&gt;
-Yet you focus on pokémon stealing.&lt;br &#x2F;&gt;
-Why not branch out to slum-lording, counterfeit gold,&lt;br &#x2F;&gt;
-Narcotraffic, or insider dealing?”&lt;&#x2F;p&gt;
-&lt;p&gt; “Self respect!” said the villain. “For how could I boast&lt;br &#x2F;&gt;
- Of the nations and kings in my thrall&lt;br &#x2F;&gt;
- If I left unaccomplished what matters the most&lt;br &#x2F;&gt;
- In my heart: namely ‘catching them all’?”&lt;&#x2F;p&gt;
-&lt;p&gt;“You are old, Giovanni, an evil tycoon,&lt;br &#x2F;&gt;
-A man to beware of, in brief.&lt;br &#x2F;&gt;
-So why are your minions such talentless goons,&lt;br &#x2F;&gt;
-And such odious comic relief?”&lt;&#x2F;p&gt;
-&lt;p&gt; “Long ago,” said the villain, “I rose to this role&lt;br &#x2F;&gt;
- By betraying my mentor and friend.&lt;br &#x2F;&gt;
- Now I choose to be served by the hapless and droll&lt;br &#x2F;&gt;
- So’s to not meet a similar end.”&lt;&#x2F;p&gt;
-&lt;p&gt;“You are old, Giovanni, no stranger to rout,&lt;br &#x2F;&gt;
-And you should be quite tricky to rattle.&lt;br &#x2F;&gt;
-So why are you always so shocked and put out&lt;br &#x2F;&gt;
-When you lose at a Pokémon battle?”&lt;&#x2F;p&gt;
-&lt;p&gt; “Fwa-ha-ha!” said the villain. “You’ve taken my bait!&lt;br &#x2F;&gt;
- And you’ll pay for the barbs I’ve endured!&lt;br &#x2F;&gt;
- Now face me in battle, my young reprobate:&lt;br &#x2F;&gt;
- Your loss is as good as assured!”&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;(With apologies to &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;You_Are_Old,_Father_William&quot;&gt;Lewis Carroll&lt;&#x2F;a&gt;,
-&lt;a href=&quot;https:&#x2F;&#x2F;en.wikisource.org&#x2F;wiki&#x2F;The_Old_Man%27s_Comforts_and_How_He_Gained_Them&quot;&gt;Robert Southey&lt;&#x2F;a&gt;,
-and &lt;a href=&quot;https:&#x2F;&#x2F;bulbapedia.bulbagarden.net&#x2F;wiki&#x2F;Giovanni&quot;&gt;Game Freak&lt;&#x2F;a&gt;.)&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>With Apologies to Billy Joel</title>
-		<published>2021-09-25T00:00:00+00:00</published>
-		<updated>2021-09-25T00:00:00+00:00</updated>
-		<link href="https://www.inter-allia.net/always-a-woman/" type="text/html"/>
-		<id>https://www.inter-allia.net/always-a-woman/</id>
-		<content type="html">&lt;p&gt;She can smell burning cities when people tell lies&lt;br &#x2F;&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>With Apologies to Billy Joel</title>
+        <published>2021-09-25T00:00:00+00:00</published>
+        <updated>2021-09-25T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/always-a-woman/" type="text/html"/>
+        <id>https://www.inter-allia.net/always-a-woman/</id>
+        
+        <summary type="html">&lt;p&gt;She can smell burning cities when people tell lies&lt;br &#x2F;&gt;
 Yeah she eats steel nails, shits &#x27;em out galvanized&lt;br &#x2F;&gt;
 Now she&#x27;s not safe for people with nut allergies&lt;br &#x2F;&gt;
 And she runs on the cloud, but she&#x27;s always a woman to me&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;She can call on strange beings from the vastiest deep&lt;br &#x2F;&gt;
-And she mumbles sestinas each night in her sleep&lt;br &#x2F;&gt;
-Yeah she burns Grover Cleveland in straw effigy&lt;br &#x2F;&gt;
-And she quacks like a duck, but she&#x27;s always a woman to me&lt;&#x2F;p&gt;
-&lt;p&gt;There&#x27;s arcane constellations traced out on her skin&lt;br &#x2F;&gt;
-That once shone on her antediluvian kin&lt;br &#x2F;&gt;
-And she tells me their name with an unrestrained glee&lt;br &#x2F;&gt;
-And I&#x27;d rather not know, but she&#x27;s always a woman to me&lt;&#x2F;p&gt;
-&lt;p&gt;She gets rashes from kashrut, she has to eat treyf&lt;br &#x2F;&gt;
-And her heart&#x27;s in an egg, in a duck, in a safe&lt;br &#x2F;&gt;
-So no heroes can end her calamitous spree&lt;br &#x2F;&gt;
-Weapons bounce off her skin, but she&#x27;s always a woman to me&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;bonus&quot;&gt;BONUS&lt;&#x2F;h2&gt;
-&lt;p&gt;She can catch you with grace, she can grab you with charm&lt;br &#x2F;&gt;
-She can grab anyone with her oversized arm&lt;br &#x2F;&gt;
-She was drawn with the finest of consummate Vs&lt;br &#x2F;&gt;
-By this guy in a mask, but she&#x27;s always a woman to me&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Learning The Alphabet</title>
-		<published>2021-05-03T00:00:00+00:00</published>
-		<updated>2021-05-03T00:00:00+00:00</updated>
-		<link href="https://www.inter-allia.net/learning-alphabet/" type="text/html"/>
-		<id>https://www.inter-allia.net/learning-alphabet/</id>
-		<content type="html">&lt;p&gt;A for Paper.&lt;&#x2F;p&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Learning The Alphabet</title>
+        <published>2021-05-03T00:00:00+00:00</published>
+        <updated>2021-05-03T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/learning-alphabet/" type="text/html"/>
+        <id>https://www.inter-allia.net/learning-alphabet/</id>
+        
+        <summary type="html">&lt;p&gt;A for Paper.&lt;&#x2F;p&gt;
 &lt;p&gt;B for Dam.&lt;&#x2F;p&gt;
 &lt;p&gt;C for Explosive.&lt;&#x2F;p&gt;
 &lt;p&gt;D for a Station.&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;E for Diethel.&lt;&#x2F;p&gt;
-&lt;p&gt;F for International.&lt;&#x2F;p&gt;
-&lt;p&gt;G for Says.&lt;&#x2F;p&gt;
-&lt;p&gt;H for Majority.&lt;&#x2F;p&gt;
-&lt;p&gt;I for the Engine Driver.&lt;&#x2F;p&gt;
-&lt;p&gt;J for Passing.&lt;&#x2F;p&gt;
-&lt;p&gt;K for Spelunking.&lt;&#x2F;p&gt;
-&lt;p&gt;L for Hobbit.&lt;&#x2F;p&gt;
-&lt;p&gt;M for Zima.&lt;&#x2F;p&gt;
-&lt;p&gt;N for Rents.&lt;&#x2F;p&gt;
-&lt;p&gt;O for Tuna.&lt;&#x2F;p&gt;
-&lt;p&gt;P for a Drug Test.&lt;&#x2F;p&gt;
-&lt;p&gt;Q for Billiards.&lt;&#x2F;p&gt;
-&lt;p&gt;R for King of the Britons.&lt;&#x2F;p&gt;
-&lt;p&gt;S for Dad.&lt;&#x2F;p&gt;
-&lt;p&gt;T for Lymphocyte.&lt;&#x2F;p&gt;
-&lt;p&gt;U for Rhea.&lt;&#x2F;p&gt;
-&lt;p&gt;V for La Revolucion.&lt;&#x2F;p&gt;
-&lt;p&gt;W for Form.&lt;&#x2F;p&gt;
-&lt;p&gt;X for Sensory.&lt;&#x2F;p&gt;
-&lt;p&gt;Y for Goodness Sake.&lt;&#x2F;p&gt;
-&lt;p&gt;Z for Wroth.&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;Variations on this theme have been done for a long time, sometimes called
-&lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Cockney_Alphabet&quot;&gt;The Cockney Alphabet&lt;&#x2F;a&gt; or
-&lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=QOheO48o5wE&quot;&gt;A Surrealist Alphabet&lt;&#x2F;a&gt;.  I
-first saw it done in &lt;em&gt;I Saw Esau&lt;&#x2F;em&gt; by Opie &amp;amp; Opie.&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>I&#x27;m getting vaccinated</title>
-		<published>2021-04-30T00:00:00+00:00</published>
-		<updated>2021-04-30T00:00:00+00:00</updated>
-		<link href="https://www.inter-allia.net/gettin-vaccinated/" type="text/html"/>
-		<id>https://www.inter-allia.net/gettin-vaccinated/</id>
-		<content type="html">&lt;p&gt;20-20-24 hours to go,&lt;br &#x2F;&gt;
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>I&#x27;m getting vaccinated</title>
+        <published>2021-04-30T00:00:00+00:00</published>
+        <updated>2021-04-30T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/gettin-vaccinated/" type="text/html"/>
+        <id>https://www.inter-allia.net/gettin-vaccinated/</id>
+        
+        <summary type="html">&lt;p&gt;20-20-24 hours to go,&lt;br &#x2F;&gt;
 I&#x27;m getting vaccinated,&lt;br &#x2F;&gt;
 &lt;a href=&quot;https:&#x2F;&#x2F;www.mass.gov&#x2F;info-details&#x2F;covid-19-updates-and-information&quot;&gt;Nothing to do, nowhere to go&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
 Till I get vaccinated&lt;&#x2F;p&gt;
-&lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt;
-&lt;p&gt;So stick me with a &lt;a href=&quot;https:&#x2F;&#x2F;berthub.eu&#x2F;articles&#x2F;11889.doc&quot;&gt;sequence&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-and let it take effect&lt;br &#x2F;&gt;
-I&#x27;ll make some &lt;a href=&quot;https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;s41401-020-0485-4&quot;&gt;spiky proteins&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-My &lt;a href=&quot;https:&#x2F;&#x2F;cellsatwork.fandom.com&#x2F;wiki&#x2F;Killer_T_Cell_(Squad_Leader)&quot;&gt;T cells&lt;&#x2F;a&gt; can detect&lt;br &#x2F;&gt;
-(But I&#x27;m no bio expert&lt;br &#x2F;&gt;
-That might not be correct)&lt;br &#x2F;&gt;
-Oh no-oh-oh-oh-oh!&lt;&#x2F;p&gt;
-&lt;p&gt;mRNA, oh mRNA:&lt;br &#x2F;&gt;
-&lt;a href=&quot;https:&#x2F;&#x2F;cen.acs.org&#x2F;pharmaceuticals&#x2F;drug-delivery&#x2F;Without-lipid-shells-mRNA-vaccines&#x2F;99&#x2F;i8&quot;&gt;lipid encapsulated&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-So every dose has &lt;a href=&quot;https:&#x2F;&#x2F;cen.acs.org&#x2F;pharmaceuticals&#x2F;drug-delivery&#x2F;Without-lipid-shells-mRNA-vaccines&#x2F;99&#x2F;i8&quot;&gt;endocytosis,&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-&lt;a href=&quot;https:&#x2F;&#x2F;cen.acs.org&#x2F;pharmaceuticals&#x2F;drug-delivery&#x2F;Without-lipid-shells-mRNA-vaccines&#x2F;99&#x2F;i8&quot;&gt;Receptor mediated&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;p&gt;So &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Intramuscular_injection#Injection_sites&quot;&gt;stick me in a muscle&lt;&#x2F;a&gt;,&lt;br &#x2F;&gt;
-I&#x27;m sick of this &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Human_virome&quot;&gt;virome&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-I can&#x27;t control my fingers,&lt;br &#x2F;&gt;
-much less my &lt;a href=&quot;https:&#x2F;&#x2F;www.nature.com&#x2F;articles&#x2F;nrmicro2655&quot;&gt;ribosomes&lt;&#x2F;a&gt;.&lt;br &#x2F;&gt;
-I hope the nurse won&#x27;t mind if&lt;br &#x2F;&gt;
-I&#x27;m humming the &lt;a href=&quot;https:&#x2F;&#x2F;www.youtube.com&#x2F;watch?v=bm51ihfi1p4&quot;&gt;Ramones&lt;&#x2F;a&gt;&lt;br &#x2F;&gt;
-Oh no-oh-oh-oh-oh!&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;(My second appointment is tomorrow.  Good luck to everybody else
-getting your vaccines!)&lt;&#x2F;p&gt;
-</content>
-	</entry>
-	<entry xml:lang="en">
-		<title>Lorax Ipsum</title>
-		<published>2021-04-26T00:00:00+00:00</published>
-		<updated>2021-04-26T00:00:00+00:00</updated>
-		<link href="https://www.inter-allia.net/lorax-ipsum/" type="text/html"/>
-		<id>https://www.inter-allia.net/lorax-ipsum/</id>
-		<content type="html">&lt;p&gt;Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
+</summary>
+        
+    </entry>
+    <entry xml:lang="en">
+        <title>Lorax Ipsum</title>
+        <published>2021-04-26T00:00:00+00:00</published>
+        <updated>2021-04-26T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/lorax-ipsum/" type="text/html"/>
+        <id>https://www.inter-allia.net/lorax-ipsum/</id>
+        
+        <summary type="html">&lt;p&gt;Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
 barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
 enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat. &lt;span id=&quot;continue-reading&quot;&gt;&lt;&#x2F;span&gt; Duis aute
-snarggle in swomeeswans in voluptate axe-hacker esse rippulus crummii
-eu moof nulla snuvv.&lt;&#x2F;p&gt;
-&lt;p&gt;Barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
-enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
-swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
-nulla snuvv.
-Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
-barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
-enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
-swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
-nulla snuvv.&lt;&#x2F;p&gt;
-&lt;p&gt;Ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
-swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
-nulla snuvv.
-Lorax ipsum gruvvulus thneed amet, snergelly once-ler lerkim, sed do
-barbaloot tempor gluppitus ut labore et truffula magna aliqua.  Ut
-enim ad grickle-grass veniam, quis miff-muffered ga-zumpco laboris
-nisi ut cruffulus ex ea schloppity consequat.  Duis aute snarggle in
-swomeeswans in voluptate axe-hacker esse rippulus crummii eu moof
-nulla snuvv.&lt;&#x2F;p&gt;
-&lt;hr &#x2F;&gt;
-&lt;p&gt;By the way, be careful when you tweet the
-&amp;quot;&lt;a href=&quot;https:&#x2F;&#x2F;loremipsum.io&#x2F;&quot;&gt;&lt;em&gt;lorem ipsum&lt;&#x2F;em&gt;&lt;&#x2F;a&gt;&amp;quot; text or anything like it.  I
-did so once, and immediately got followed by dozens of maddened
-spambots.&lt;&#x2F;p&gt;
-&lt;p&gt;My working theory is:&lt;&#x2F;p&gt;
-&lt;ol&gt;
-&lt;li&gt;Somebody is selling a spambot that the user needs
-to configure with a list of search terms.&lt;&#x2F;li&gt;
-&lt;li&gt;The default list of search terms includes some or all of the &lt;em&gt;lorem
-ipsum&lt;&#x2F;em&gt; text.&lt;&#x2F;li&gt;
-&lt;li&gt;At least some users never actually change the configuration.&lt;&#x2F;li&gt;
-&lt;&#x2F;ol&gt;
-&lt;p&gt;This was a few years back, so maybe those bots are gone now.  Why not
-tweet some &lt;em&gt;lorem ipsum&lt;&#x2F;em&gt; and find out?&lt;&#x2F;p&gt;
-</content>
-	</entry>
+nisi ut cruffulus ex ea schloppity consequat. </summary>
+        
+    </entry>
 </feed>

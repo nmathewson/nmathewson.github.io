@@ -12,14 +12,14 @@
   <title>inter allia: Implementing Rust futures when you only have async functions</title>
 
   <!-- Bootstrap core CSS -->
-  <link rel="stylesheet" href="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;css&#x2F;bootstrap.min.css">
+  <link rel="stylesheet" href="https://www.inter-allia.net/css/bootstrap.min.css">
   <!-- Custom fonts for this template -->
-  <link href=" https:&#x2F;&#x2F;www.inter-allia.net&#x2F;css&#x2F;all.min.css" rel=" stylesheet" type="text/css">
+  <link href=" https://www.inter-allia.net/css/all.min.css" rel=" stylesheet" type="text/css">
 
   <!-- Custom styles for this template -->
-  <link rel="stylesheet" href="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;clean-blog.css">
+  <link rel="stylesheet" href="https://www.inter-allia.net/clean-blog.css">
   
-<link rel="stylesheet" href="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;inter-allia.css">
+<link rel="stylesheet" href="https://www.inter-allia.net/inter-allia.css">
 
 
 </head>
@@ -62,7 +62,7 @@
   <!-- Page Header -->
   
 <!-- Page Header -->
-<header class="masthead" style="background-image: url('https:&#x2F;&#x2F;www.inter-allia.net&#x2F;img&#x2F;post-bg.jpg')">
+<header class="masthead" style="background-image: url('https://www.inter-allia.net/img/post-bg.jpg')">
   <div class="overlay"></div>
   <div class="container">
     <div class="row">
@@ -116,14 +116,13 @@ implementation of the
 <a href="https://gitlab.torproject.org/tpo/core/torspec/">Tor protocols</a> in Rust.
 After a bunch of hacking, I finally got to the point where I had a <code>DataStream</code>
 type that provides an anonymous connection over the Tor network:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">DataStream {
-    </span><span style="color:#b48ead;">pub</span><span style="color:#c0c5ce;"> async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">read</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;">[</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]) -&gt; io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;
+<pre data-lang="Rust" class="language-Rust "><code class="language-Rust" data-lang="Rust">impl DataStream {
+    pub async fn read(&amp;mut self, buf: &amp;mut[u8]) -&gt; io::Result&lt;usize&gt;
     { ... }
-    </span><span style="color:#b48ead;">pub</span><span style="color:#c0c5ce;"> async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">write</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;[</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]) -&gt; io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;
+    pub async fn write(&amp;mut self, buf: &amp;[u8]) -&gt; io::Result&lt;usize&gt;
     { ... }
 }
-</span></code></pre>
+</code></pre>
 <p>Now, there's a lot of complexity hiding in those ellipses.  Tor isn't
 a simple protocol: when it's trying to read, it may need to wait for data
 to arrive.  It may also need to <em>send</em> messages in response to arriving
@@ -136,13 +135,12 @@ functions to explicitly return a typed future was <em>not</em> an option.</p>
 I could use it with other code in the Rust async ecosystem.  So let's
 look at <code>AsyncRead</code> (because it's simpler than <code>AsyncWrite</code>).  The only
 required method in <code>AsyncRead</code> is:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">pub fn </span><span style="color:#8fa1b3;">poll_read</span><span style="color:#c0c5ce;">(
-    </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">: Pin&lt;&amp;</span><span style="color:#b48ead;">mut Self</span><span style="color:#c0c5ce;">&gt;,
-    </span><span style="color:#bf616a;">cx</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut </span><span style="color:#c0c5ce;">Context&lt;&#39;_&gt;,
-    </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> [</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]
-) -&gt; Poll&lt;io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;&gt;
-</span></code></pre>
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">pub fn poll_read(
+    self: Pin&lt;&amp;mut Self&gt;,
+    cx: &amp;mut Context&lt;&#x27;_&gt;,
+    buf: &amp;mut [u8]
+) -&gt; Poll&lt;io::Result&lt;usize&gt;&gt;
+</code></pre>
 <p>This <code>read()</code> has to check whether there's data can be read into <code>buf</code>
 immediately, without blocking.  If there is, we read the data and
 return the number of bytes we read.  Otherwise, we have to schedule ourself on
@@ -156,71 +154,69 @@ will hang on to its buffer until the future is finally ready.  But
 its buffer at all.  So I started by defining a wrapper variant of
 <code>DataStream</code> to implements the behavior that <code>poll_read</code> would
 need:<sup class="footnote-reference"><a href="#inefficient">2</a></sup></p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">DataReaderImpl {
-    </span><span style="color:#bf616a;">s</span><span style="color:#c0c5ce;">: DataStream,
-    </span><span style="color:#bf616a;">pending</span><span style="color:#c0c5ce;">: Vec&lt;</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">&gt;
-    offset: </span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">,
-    </span><span style="color:#bf616a;">len</span><span style="color:#c0c5ce;">: </span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">,
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">pub struct DataReaderImpl {
+    s: DataStream,
+    pending: Vec&lt;u8&gt;
+    offset: usize,
+    len: usize,
 }
-</span><span style="color:#b48ead;">pub struct </span><span style="color:#c0c5ce;">DataReaderImpl {
-    </span><span style="color:#bf616a;">s</span><span style="color:#c0c5ce;">: DataStream,
-    </span><span style="color:#bf616a;">pending</span><span style="color:#c0c5ce;">: Vec&lt;</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">&gt;
+pub struct DataReaderImpl {
+    s: DataStream,
+    pending: Vec&lt;u8&gt;
 }
-</span><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">DataReaderImpl {
-    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">new</span><span style="color:#c0c5ce;">(</span><span style="color:#bf616a;">s</span><span style="color:#c0c5ce;">: DataStream) -&gt; DataReaderImpl {
+impl DataReaderImpl {
+    fn new(s: DataStream) -&gt; DataReaderImpl {
         DataReaderImpl {
             s,
             pending: Vec::new(),
         }
     }
-    </span><span style="color:#65737e;">// Load up to 1k into the pending buffer.
-</span><span style="color:#c0c5ce;">    async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">fill_buf</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt; {
-        </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> data = vec![</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">;</span><span style="color:#d08770;">1024</span><span style="color:#c0c5ce;">];
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> len = </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.s.</span><span style="color:#96b5b4;">read</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> data[..]).await?;
-        data.</span><span style="color:#96b5b4;">truncate</span><span style="color:#c0c5ce;">(len);
-        </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending.</span><span style="color:#96b5b4;">extend</span><span style="color:#c0c5ce;">(data);
+    &#x2F;&#x2F; Load up to 1k into the pending buffer.
+    async fn fill_buf(&amp;mut self) -&gt; io::Result&lt;usize&gt; {
+        let mut data = vec![0;1024];
+        let len = self.s.read(&amp;mut data[..]).await?;
+        data.truncate(len);
+        self.pending.extend(data);
         Ok(len)
     }
-    </span><span style="color:#65737e;">// pull bytes from the pending buffer into `buf`.
-    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">extract_bytes</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> [</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]) -&gt; </span><span style="color:#b48ead;">usize </span><span style="color:#c0c5ce;">{
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = cmp::min(buf.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">(), </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending.</span><span style="color:#96b5b4;">len</span><span style="color:#c0c5ce;">());
-        buf[..n].</span><span style="color:#96b5b4;">copy_from_slice</span><span style="color:#c0c5ce;">(&amp;</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending[..n]);
-        </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending.</span><span style="color:#96b5b4;">drain</span><span style="color:#c0c5ce;">(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">..n);
+    &#x2F;&#x2F; pull bytes from the pending buffer into `buf`.
+    fn extract_bytes(&amp;mut self, buf: &amp;mut [u8]) -&gt; usize {
+        let n = cmp::min(buf.len(), self.pending.len());
+        buf[..n].copy_from_slice(&amp;self.pending[..n]);
+        self.pending.drain(0..n);
         n
     }
 }
-</span></code></pre>
+</code></pre>
 <p>Then, I thought, it ought to be easy to write <code>AsyncRead</code>!  Here was my
 first try:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#65737e;">// This won&#39;t work...
-</span><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">AsyncRead </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">DataReaderImpl {
-    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">poll_read</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">: Pin&lt;&amp;</span><span style="color:#b48ead;">mut Self</span><span style="color:#c0c5ce;">&gt;,
-                 </span><span style="color:#bf616a;">cx</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut </span><span style="color:#c0c5ce;">Context&lt;&#39;_&gt;,
-                 </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> [</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]) -&gt; Poll&lt;io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;&gt; {
-       </span><span style="color:#b48ead;">if </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.pending.</span><span style="color:#96b5b4;">is_empty</span><span style="color:#c0c5ce;">() {
-            </span><span style="color:#65737e;">// looks like we need more bytes.
-            </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> fut = </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">fill_buf</span><span style="color:#c0c5ce;">();
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">&#x2F;&#x2F; This won&#x27;t work...
+impl AsyncRead for DataReaderImpl {
+    fn poll_read(mut self: Pin&lt;&amp;mut Self&gt;,
+                 cx: &amp;mut Context&lt;&#x27;_&gt;,
+                 buf: &amp;mut [u8]) -&gt; Poll&lt;io::Result&lt;usize&gt;&gt; {
+       if self.pending.is_empty() {
+            &#x2F;&#x2F; looks like we need more bytes.
+            let fut = self.fill_buf();
             futures::pin_mut!(fut);
-            </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> fut.</span><span style="color:#96b5b4;">poll</span><span style="color:#c0c5ce;">(cx) {
+            match fut.poll(cx) {
                 Poll::Ready(Err(e)) =&gt;
-                    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Poll::Ready(Err(e)),
+                    return Poll::Ready(Err(e)),
                 Poll::Ready(Ok(n)) =&gt;
-                    </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> n == </span><span style="color:#d08770;">0 </span><span style="color:#c0c5ce;">{
-                        </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Poll::Ready(Ok(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">)); </span><span style="color:#65737e;">// EOF
-                    </span><span style="color:#c0c5ce;">}
+                    if n == 0 {
+                        return Poll::Ready(Ok(0)); &#x2F;&#x2F; EOF
+                    }
                 Poll::Pending =&gt;
-                    todo!(&quot;</span><span style="color:#a3be8c;">crud, where do i put the future?</span><span style="color:#c0c5ce;">&quot;), </span><span style="color:#65737e;">// XXXX
-            </span><span style="color:#c0c5ce;">}
+                    todo!(&quot;crud, where do i put the future?&quot;), &#x2F;&#x2F; XXXX
+            }
         }
 
-        </span><span style="color:#65737e;">// We have some data; move it out to the caller.
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">extract_bytes</span><span style="color:#c0c5ce;">(buf);
+        &#x2F;&#x2F; We have some data; move it out to the caller.
+        let n = self.extract_bytes(buf);
         Poll::Ready(Ok(n))
     }
 }
-</span></code></pre>
+</code></pre>
 <p>Almost there!  But what do I do if the future says it's pending?  I need
 to store it and poll it again later the next time I call this function.
 But to do <em>that</em>, I won't be able to pin the future to the stack!  I'll
@@ -253,89 +249,86 @@ That way, we never have a self-referential structure!</p>
 <p>First we had to define a new variation on <code>fill_buf</code> that will take
 ownership of the reader when it's called, and return ownership once it's
 done:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">DataReaderImpl {
-    async </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">owning_fill_buf</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">) -&gt; (</span><span style="color:#b48ead;">Self</span><span style="color:#c0c5ce;">, io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;) {
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> r = </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.</span><span style="color:#96b5b4;">fill_buf</span><span style="color:#c0c5ce;">().await;
-        (</span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">, r)
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">impl DataReaderImpl {
+    async fn owning_fill_buf(mut self) -&gt; (Self, io::Result&lt;usize&gt;) {
+        let r = self.fill_buf().await;
+        (self, r)
     }
 }
-</span></code></pre>
+</code></pre>
 <p>Then we had to define an enum that could hold either the future or the
 <code>DataReaderImpl</code> object, along with a wrapper struct to hold the enum.</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">type </span><span style="color:#c0c5ce;">OwnedResult = (DataReaderImpl, io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;);
-</span><span style="color:#b48ead;">enum </span><span style="color:#c0c5ce;">State {
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">type OwnedResult = (DataReaderImpl, io::Result&lt;usize&gt;);
+enum State {
     Closed,
     Ready(DataReaderImpl),
     Reading(Pin&lt;Box&lt;dyn Future&lt;Output=OwnedResult&gt;&gt;&gt;),
 }
-</span><span style="color:#b48ead;">struct </span><span style="color:#c0c5ce;">DataReader {
-    </span><span style="color:#bf616a;">state</span><span style="color:#c0c5ce;">: Option&lt;State&gt;
+struct DataReader {
+    state: Option&lt;State&gt;
 }
-</span></code></pre>
+</code></pre>
 <p>Note that the <code>DataReader</code> struct holds an <code>Option&lt;State&gt;</code>—we'll want
 to modify the state object destructively, so we'll need to take ownership of
 the state in <code>poll_read</code> and then replace it with something else.<sup class="footnote-reference"><a href="#memswap">5</a></sup></p>
 <p>With this groundwork in place we could finally give an implementation
 of <code>AsyncRead</code> that works:</p>
-<pre style="background-color:#2b303b;">
-<code><span style="color:#b48ead;">impl </span><span style="color:#c0c5ce;">AsyncRead </span><span style="color:#b48ead;">for </span><span style="color:#c0c5ce;">DataReader {
-    </span><span style="color:#b48ead;">fn </span><span style="color:#8fa1b3;">poll_read</span><span style="color:#c0c5ce;">(</span><span style="color:#b48ead;">mut </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">: Pin&lt;&amp;</span><span style="color:#b48ead;">mut Self</span><span style="color:#c0c5ce;">&gt;,
-                 </span><span style="color:#bf616a;">cx</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut </span><span style="color:#c0c5ce;">Context&lt;&#39;_&gt;,
-                 </span><span style="color:#bf616a;">buf</span><span style="color:#c0c5ce;">: &amp;</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> [</span><span style="color:#b48ead;">u8</span><span style="color:#c0c5ce;">]) -&gt; Poll&lt;io::Result&lt;</span><span style="color:#b48ead;">usize</span><span style="color:#c0c5ce;">&gt;&gt; {
-        </span><span style="color:#65737e;">// We&#39;re taking this temporarily. We have to put
-        // something back before we return.
-        </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> state = </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state.</span><span style="color:#96b5b4;">take</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">unwrap</span><span style="color:#c0c5ce;">();
+<pre data-lang="rust" class="language-rust "><code class="language-rust" data-lang="rust">impl AsyncRead for DataReader {
+    fn poll_read(mut self: Pin&lt;&amp;mut Self&gt;,
+                 cx: &amp;mut Context&lt;&#x27;_&gt;,
+                 buf: &amp;mut [u8]) -&gt; Poll&lt;io::Result&lt;usize&gt;&gt; {
+        &#x2F;&#x2F; We&#x27;re taking this temporarily. We have to put
+        &#x2F;&#x2F; something back before we return.
+        let state = self.state.take().unwrap();
 
-        </span><span style="color:#65737e;">// We own the state, so we can destructure it.
-        </span><span style="color:#b48ead;">let mut</span><span style="color:#c0c5ce;"> future = </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> state {
+        &#x2F;&#x2F; We own the state, so we can destructure it.
+        let mut future = match state {
             State::Closed =&gt; {
-                </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state = Some(State::Closed);
-                </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Poll::Ready(Ok(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">));
+                self.state = Some(State::Closed);
+                return Poll::Ready(Ok(0));
             }
-            State::Ready(</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> imp) =&gt; {
-                </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = imp.</span><span style="color:#96b5b4;">extract_bytes</span><span style="color:#c0c5ce;">(buf);
-                </span><span style="color:#b48ead;">if</span><span style="color:#c0c5ce;"> n &gt; </span><span style="color:#d08770;">0 </span><span style="color:#c0c5ce;">{
-                    </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state = Some(State::Ready(imp));
-                    </span><span style="color:#65737e;">// We have data, so we can give it back now.
-                    </span><span style="color:#b48ead;">return </span><span style="color:#c0c5ce;">Poll::Ready(Ok(n));
+            State::Ready(mut imp) =&gt; {
+                let n = imp.extract_bytes(buf);
+                if n &gt; 0 {
+                    self.state = Some(State::Ready(imp));
+                    &#x2F;&#x2F; We have data, so we can give it back now.
+                    return Poll::Ready(Ok(n));
                 }
-                </span><span style="color:#65737e;">// Nothing available; launch a read and poll it.
-                </span><span style="color:#c0c5ce;">Box::pin(imp.</span><span style="color:#96b5b4;">owning_fill_buf</span><span style="color:#c0c5ce;">())
+                &#x2F;&#x2F; Nothing available; launch a read and poll it.
+                Box::pin(imp.owning_fill_buf())
             }
-            </span><span style="color:#65737e;">// If we have a future, we need to poll it.
-            </span><span style="color:#c0c5ce;">State::Reading(fut) =&gt; fut,
+            &#x2F;&#x2F; If we have a future, we need to poll it.
+            State::Reading(fut) =&gt; fut,
         };
 
-        </span><span style="color:#65737e;">// Now we have a future for an in-progress read.
-        // Can it make any progress?
-        </span><span style="color:#b48ead;">match</span><span style="color:#c0c5ce;"> future.</span><span style="color:#96b5b4;">as_mut</span><span style="color:#c0c5ce;">().</span><span style="color:#96b5b4;">poll</span><span style="color:#c0c5ce;">(cx) {
-            Poll::Ready((_imp, Err(e))) =&gt; { </span><span style="color:#65737e;">// Error
-                </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state = Some(State::Closed);
+        &#x2F;&#x2F; Now we have a future for an in-progress read.
+        &#x2F;&#x2F; Can it make any progress?
+        match future.as_mut().poll(cx) {
+            Poll::Ready((_imp, Err(e))) =&gt; { &#x2F;&#x2F; Error
+                self.state = Some(State::Closed);
                 Poll::Ready(Err(e))
             }
-            Poll::Ready((_imp, Ok(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">))) =&gt; { </span><span style="color:#65737e;">// EOF
-                </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state = Some(State::Closed);
-                Poll::Ready(Ok(</span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">))
+            Poll::Ready((_imp, Ok(0))) =&gt; { &#x2F;&#x2F; EOF
+                self.state = Some(State::Closed);
+                Poll::Ready(Ok(0))
             }
-            Poll::Ready((</span><span style="color:#b48ead;">mut</span><span style="color:#c0c5ce;"> imp, Ok(_))) =&gt; {
-                </span><span style="color:#65737e;">// We have some data!
-                </span><span style="color:#b48ead;">let</span><span style="color:#c0c5ce;"> n = imp.</span><span style="color:#96b5b4;">extract_bytes</span><span style="color:#c0c5ce;">(buf);
-                </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state = Some(State::Ready(imp));
-                debug_assert!(n &gt; </span><span style="color:#d08770;">0</span><span style="color:#c0c5ce;">);
+            Poll::Ready((mut imp, Ok(_))) =&gt; {
+                &#x2F;&#x2F; We have some data!
+                let n = imp.extract_bytes(buf);
+                self.state = Some(State::Ready(imp));
+                debug_assert!(n &gt; 0);
                 Poll::Ready(Ok(n))
             }
             Poll::Pending =&gt; {
-                </span><span style="color:#65737e;">// We&#39;re pending; remember the future
-                // and tell the caller.
-                </span><span style="color:#bf616a;">self</span><span style="color:#c0c5ce;">.state = Some(State::Reading(future));
+                &#x2F;&#x2F; We&#x27;re pending; remember the future
+                &#x2F;&#x2F; and tell the caller.
+                self.state = Some(State::Reading(future));
                 Poll::Pending
             }
         }
     }
 }
-</span></code></pre>
+</code></pre>
 <p>Now when <code>poll_read()</code> takes ownership of the previous state,
 it either owns a <code>DataReaderImpl</code> or a future returned by
 <code>owning_fill_buf()</code>—but never both at once, so we don't have any
@@ -380,7 +373,7 @@ expect there would be a performance difference.</p>
         <div class="post-tags">
           <p>Tags:
             
-            <a href="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;tags&#x2F;rust&#x2F;">#rust</a>
+            <a href="https://www.inter-allia.net/tags/rust/">#rust</a>
             
           </p>
         </div>
@@ -444,11 +437,11 @@ the <a href="https://github.com/dave-tucker/zola-clean-blog">zola-clean-blog</a>
   </footer>
 
   <!-- Bootstrap core JavaScript -->
-  <script src="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;js&#x2F;jquery.min.js"></script>
-  <script src="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;js&#x2F;bootstrap.bundle.min.js"></script>
+  <script src="https://www.inter-allia.net/js/jquery.min.js"></script>
+  <script src="https://www.inter-allia.net/js/bootstrap.bundle.min.js"></script>
 
   <!--Custom scripts for this template-->
-  <script src="https:&#x2F;&#x2F;www.inter-allia.net&#x2F;js&#x2F;clean-blog.min.js"></script>
+  <script src="https://www.inter-allia.net/js/clean-blog.min.js"></script>
 
   <!--- Additional scripts -->
   
