@@ -5,8 +5,123 @@
     <link href="https://www.inter-allia.net/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://www.inter-allia.net"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2023-06-25T00:00:00+00:00</updated>
+    <updated>2023-07-01T00:00:00+00:00</updated>
     <id>https://www.inter-allia.net/atom.xml</id>
+    <entry xml:lang="en">
+        <title>Resource directory</title>
+        <published>2023-07-01T00:00:00+00:00</published>
+        <updated>2023-07-01T00:00:00+00:00</updated>
+        <author>
+          <name>Unknown</name>
+        </author>
+        <link rel="alternate" href="https://www.inter-allia.net/misc/resources/" type="text/html"/>
+        <id>https://www.inter-allia.net/misc/resources/</id>
+        
+        <content type="html">&lt;h1 id=&quot;a-little-link-directory&quot;&gt;A little link directory&lt;&#x2F;h1&gt;
+&lt;p&gt;Here are a few things I find generally useful.
+I&#x27;m putting them here for now,
+since the search ecosystem is increasingly bad.&lt;&#x2F;p&gt;
+&lt;p&gt;—nickm&lt;&#x2F;p&gt;
+&lt;h2 id=&quot;about-me&quot;&gt;About me&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.wangafu.net&#x2F;~nickm&#x2F;&quot;&gt;My old website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;abyssdomain.expert&#x2F;@nickm&quot;&gt;Me, on Mastodon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;github.com&#x2F;nmathewson&#x2F;&quot;&gt;Me, on github&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;nickm_tor&quot;&gt;Me, on gitlab.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.inter-allia.net&#x2F;&quot;&gt;Inter Allia: My longer ramblings and silly poems&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tor-related&quot;&gt;Tor-related&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arti.torproject.org&quot;&gt;Arti&lt;&#x2F;a&gt;: rewriting Tor in Rust&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.torproject.org&quot;&gt;The Tor Project&lt;&#x2F;a&gt;: we&#x27;re trying to make
+online privacy possible, for everybody.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.freehaven.net&#x2F;anonbib&#x2F;&quot;&gt;The Free Haven anonymity bibliography&lt;&#x2F;a&gt;:
+Not updated as regular as it should be, but still quite useful on
+older papers.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.webtoons.com&#x2F;en&#x2F;challenge&#x2F;internet-explorer&#x2F;ep-42-firefox-tor&#x2F;viewer?title_no=219164&amp;amp;episode_no=64&quot;&gt;Tor&#x27;s first appearance&lt;&#x2F;a&gt;
+on the
+&lt;a href=&quot;https:&#x2F;&#x2F;www.webtoons.com&#x2F;en&#x2F;challenge&#x2F;internet-explorer&#x2F;list?title_no=219164&quot;&gt;&amp;quot;Internet Explorer&amp;quot; webcomic&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;other-topics-to-add&quot;&gt;Other topics to add&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;Tabletop roleplaying games&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;Nobilis&lt;&#x2F;li&gt;
+&lt;li&gt;rpg.net&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Neat speedgaming links&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;recommended books&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;crucial conversations&lt;&#x2F;li&gt;
+&lt;li&gt;terra ignota&lt;&#x2F;li&gt;
+&lt;li&gt;locked tomb&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Public domain books, etc&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;gutenberg,&lt;&#x2F;li&gt;
+&lt;li&gt;that other one.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Fan wikis
+*&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Recipes&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;software-engineering&quot;&gt;Software engineering&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jacobian.org&#x2F;series&#x2F;estimation&#x2F;&quot;&gt;A guide to software estimation&lt;&#x2F;a&gt;
+that IMO doesn&#x27;t suck.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;A really good post from Nick Cameron on &lt;a href=&quot;https:&#x2F;&#x2F;www.ncameron.org&#x2F;blog&#x2F;some-thoughts-on-open-collaboration&#x2F;&quot;&gt;open collaboration&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;blogs-worth-reading&quot;&gt;Blogs worth reading&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.adapalmer.com&#x2F;blog-ex-urbe&#x2F;&quot;&gt;Ex Urbe&lt;&#x2F;a&gt; by Ada Palmer.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.ncameron.org&#x2F;blog&#x2F;&quot;&gt;Nick Cameron&#x27;s blog&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;tokio.rs&#x2F;blog&quot;&gt;Tokio blog&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.timdbg.com&#x2F;&quot;&gt;TimDbg&#x27;s blog&lt;&#x2F;a&gt;: logs of assembly and low-level
+material. Good teacher.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;predr.ag&#x2F;blog&#x2F;&quot;&gt;Pedrag&#x27;s blog&lt;&#x2F;a&gt;: Rust stuff; maintainer of
+cargo-semver-checks. Lots of interesting semver minutiae.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;words.filippo.io&#x2F;&quot;&gt;Filippo Valsorda&lt;&#x2F;a&gt;: Cryptography,
+Golang cryptography, professional open source, etc.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;unsorted-for-now&quot;&gt;Unsorted for now.&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;An
+&lt;a href=&quot;https:&#x2F;&#x2F;www.exurbe.com&#x2F;wp-content&#x2F;uploads&#x2F;2020&#x2F;07&#x2F;Healthy-Work-Habits-COVID-1.pdf&quot;&gt;academic work habits guide&lt;&#x2F;a&gt;
+from the COVID pandemic that is generally useful for non-academic and
+less-pandemic-focused areas too.  By &lt;a href=&quot;https:&#x2F;&#x2F;www.adapalmer.com&#x2F;&quot;&gt;Ada Palmer&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;Columbia University&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;digitaldante.columbia.edu&#x2F;&quot;&gt;&amp;quot;Digital Dante&amp;quot;&lt;&#x2F;a&gt;
+resources.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;integralguide.com&#x2F;Roadmap&quot;&gt;Integral Guide&lt;&#x2F;a&gt; to wellbeing.
+Promising but not all there yet?&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dustri.org&#x2F;b&#x2F;horrible-edge-cases-to-consider-when-dealing-with-music.html&quot;&gt;Horrible edge cases to consider when dealing with music&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+</content>
+        
+    </entry>
     <entry xml:lang="en">
         <title>List of albums</title>
         <published>2023-06-25T00:00:00+00:00</published>
@@ -17,7 +132,9 @@
         <link rel="alternate" href="https://www.inter-allia.net/misc/albums/" type="text/html"/>
         <id>https://www.inter-allia.net/misc/albums/</id>
         
-        <content type="html">&lt;h3&gt;ABC_Spanish_In_Motion&lt;&#x2F;h3&gt;
+        <content type="html">&lt;p&gt;(This is a list of albums we own.
+I use it when I&#x27;m out in a used record store and I forget what we have.)&lt;&#x2F;p&gt;
+&lt;h3&gt;ABC_Spanish_In_Motion&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;La_Primavera_Trae_Sopresas &lt;&#x2F;li&gt;
     &lt;li&gt;Mira_las_hojas_caer &lt;&#x2F;li&gt;
