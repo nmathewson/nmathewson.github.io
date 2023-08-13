@@ -17,16 +17,21 @@
         <link rel="alternate" href="https://www.inter-allia.net/misc/bookmarks/" type="text/html"/>
         <id>https://www.inter-allia.net/misc/bookmarks/</id>
         
-        <content type="html">&lt;h1 id=&quot;a-little-link-directory&quot;&gt;A little link directory&lt;&#x2F;h1&gt;
-&lt;p&gt;Here are a few things I find generally useful.
+        <content type="html">&lt;h3&gt;A little link directory&lt;&#x2F;h3&gt; &lt;!-- h3 verbatim to avoid TOC --&gt;
+&lt;p&gt;Here&#x27;s an increasingly large pile of bookmarks.
+Most of these are semi-curated backups of my
+old, old bookmark files
+from web browsers I don&#x27;t use any more,
+on computers that haven&#x27;t worked for years.
 I&#x27;m putting them here for now,
-since the search ecosystem is increasingly bad.&lt;&#x2F;p&gt;
+since the search ecosystem is increasingly bad,
+and Internet Archive links are not always easy to find.&lt;&#x2F;p&gt;
 &lt;p&gt;Links aren&#x27;t endorsements, obviously.
 Some of this stuff is only here so I can remember
 that once, decades ago, I was the kind of person
 who thought it was neat.&lt;&#x2F;p&gt;
 &lt;p&gt;—nickm&lt;&#x2F;p&gt;
-&lt;h2 id=&quot;about-me&quot;&gt;About me&lt;&#x2F;h2&gt;
+&lt;h1 id=&quot;about-me&quot;&gt;About me&lt;&#x2F;h1&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.wangafu.net&#x2F;~nickm&#x2F;&quot;&gt;My old website&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;abyssdomain.expert&#x2F;@nickm&quot;&gt;Me, on Mastodon&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
@@ -34,6 +39,7 @@ who thought it was neat.&lt;&#x2F;p&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;gitlab.com&#x2F;nickm_tor&quot;&gt;Me, on gitlab.com&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.inter-allia.net&#x2F;&quot;&gt;Inter Allia: My longer ramblings and silly poems&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;computers-technology-and-the-internet&quot;&gt;Computers, technology, and the internet&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;tor-related&quot;&gt;Tor-related&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;arti.torproject.org&quot;&gt;Arti&lt;&#x2F;a&gt;: rewriting Tor in Rust&lt;&#x2F;li&gt;
@@ -46,54 +52,17 @@ older papers.&lt;&#x2F;li&gt;
 on the
 &lt;a href=&quot;https:&#x2F;&#x2F;www.webtoons.com&#x2F;en&#x2F;challenge&#x2F;internet-explorer&#x2F;list?title_no=219164&quot;&gt;&amp;quot;Internet Explorer&amp;quot; webcomic&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;other-topics-to-add&quot;&gt;Other topics to add&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;Tabletop roleplaying games&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;Nobilis&lt;&#x2F;li&gt;
-&lt;li&gt;rpg.net&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Neat speedgaming links&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;recommended books&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;crucial conversations&lt;&#x2F;li&gt;
-&lt;li&gt;terra ignota&lt;&#x2F;li&gt;
-&lt;li&gt;locked tomb&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Public domain books, etc&lt;&#x2F;p&gt;
-&lt;ul&gt;
-&lt;li&gt;gutenberg,&lt;&#x2F;li&gt;
-&lt;li&gt;that other one.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Fan wikis
-*&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Recipes&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;software-engineering&quot;&gt;Software engineering&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jacobian.org&#x2F;series&#x2F;estimation&#x2F;&quot;&gt;A guide to software estimation&lt;&#x2F;a&gt;
-that IMO doesn&#x27;t suck.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;A really good post from Nick Cameron on &lt;a href=&quot;https:&#x2F;&#x2F;www.ncameron.org&#x2F;blog&#x2F;some-thoughts-on-open-collaboration&#x2F;&quot;&gt;open collaboration&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;jacobian.org&#x2F;series&#x2F;estimation&#x2F;&quot;&gt;A guide to software estimation&lt;&#x2F;a&gt;
+that IMO doesn&#x27;t suck.&lt;&#x2F;li&gt;
+&lt;li&gt;A really good post from Nick Cameron on &lt;a href=&quot;https:&#x2F;&#x2F;www.ncameron.org&#x2F;blog&#x2F;some-thoughts-on-open-collaboration&#x2F;&quot;&gt;open collaboration&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dustri.org&#x2F;b&#x2F;horrible-edge-cases-to-consider-when-dealing-with-music.html&quot;&gt;Horrible edge cases to consider when dealing with music&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;blogs-worth-reading&quot;&gt;Blogs worth reading&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;technical-blogs&quot;&gt;Technical blogs&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.adapalmer.com&#x2F;blog-ex-urbe&#x2F;&quot;&gt;Ex Urbe&lt;&#x2F;a&gt; by Ada Palmer.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20170715120119&#x2F;http:&#x2F;&#x2F;advogato.org&#x2F;&quot;&gt;Advogato&lt;&#x2F;a&gt;
+(defunct) had in interesting model for trust in forums.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.ncameron.org&#x2F;blog&#x2F;&quot;&gt;Nick Cameron&#x27;s blog&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;tokio.rs&#x2F;blog&quot;&gt;Tokio blog&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.timdbg.com&#x2F;&quot;&gt;TimDbg&#x27;s blog&lt;&#x2F;a&gt;: logs of assembly and low-level
@@ -102,28 +71,13 @@ material. Good teacher.&lt;&#x2F;li&gt;
 cargo-semver-checks. Lots of interesting semver minutiae.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;words.filippo.io&#x2F;&quot;&gt;Filippo Valsorda&lt;&#x2F;a&gt;: Cryptography,
 Golang cryptography, professional open source, etc.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;devblogs.microsoft.com&#x2F;oldnewthing&#x2F;&quot;&gt;The old new thing&lt;&#x2F;a&gt;, a
+long running blog about windows internals and the like.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3 id=&quot;defunct-blogs&quot;&gt;Defunct blogs&lt;&#x2F;h3&gt;
+&lt;h1 id=&quot;entertaining-things&quot;&gt;Entertaining things&lt;&#x2F;h1&gt;
+&lt;h2 id=&quot;literature-writing-stories&quot;&gt;Literature, writing, stories&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.groklaw.net&#x2F;&quot;&gt;Groklaw&lt;&#x2F;a&gt; covered important civil liberties
-liberties stuff.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;altonbrown.com&#x2F;how-to-slice-a-mango&#x2F;&quot;&gt;Alton Brown&lt;&#x2F;a&gt; once blogged.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;nielsenhayden.com&#x2F;makinglight&#x2F;&quot;&gt;Making Light&lt;&#x2F;a&gt; had (has?)
-an amazing community, and so much science fiction&#x2F;cultural stuff.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;journal.neilgaiman.com&#x2F;&quot;&gt;Neil Gaiman&lt;&#x2F;a&gt; updates his blog
-occasionally.&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.infomercial-hell.com&#x2F;blog&#x2F;&quot;&gt;Infomercial Hell&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;defunct-social-adjacent&quot;&gt;Defunct social-adjacent&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20170715120119&#x2F;http:&#x2F;&#x2F;advogato.org&#x2F;&quot;&gt;Advogato&lt;&#x2F;a&gt;
-had in interesting model for what was Forums.&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;promoted-nerdy&quot;&gt;promoted, nerdy&lt;&#x2F;h2&gt;
-&lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;forum.rpg.net&#x2F;index.php&quot;&gt;rpg.net&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.indie-rpgs.com&#x2F;forge&#x2F;index.php&quot;&gt;The Forge&lt;&#x2F;a&gt; (archived&#x2F;defunct&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;asoiaf.westeros.org&#x2F;&quot;&gt;A Forum of Ice and Fire&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;hitherby-dragons.wikidot.com&#x2F;&quot;&gt;Hitherby Dragons&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;web-comics&quot;&gt;(Web)comics&lt;&#x2F;h2&gt;
 &lt;ul&gt;
@@ -141,86 +95,196 @@ had in interesting model for what was Forums.&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.lorebrandcomics.com&#x2F;&quot;&gt;Lore Brand Comics&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;archives.erfworld.com&#x2F;&quot;&gt;Erfworld&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.asofterworld.com&#x2F;&quot;&gt;A Softer World&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.perspicuity.com&#x2F;&quot;&gt;Perspicuity&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;nerocam.com&#x2F;DrFun&#x2F;Dave&#x2F;archive.htm&quot;&gt;Doctor Fun&lt;&#x2F;a&gt; (defunct, archived)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;narbonic.com&#x2F;&quot;&gt;Narbonic&lt;&#x2F;a&gt; (completed)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;skin-horse.com&#x2F;&quot;&gt;Skin Horse&lt;&#x2F;a&gt; (completed)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20190125013107&#x2F;https:&#x2F;&#x2F;j.aufbix.org&#x2F;plif&#x2F;archive&#x2F;&quot;&gt;The Parking Lot Is Full&lt;&#x2F;a&gt; (defunct, archived)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;funny-stuff&quot;&gt;Funny (?) stuff&lt;&#x2F;h2&gt;
+&lt;p&gt;Or in some cases, things I thought were funny 25 years ago.&lt;&#x2F;p&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.theonion.com&#x2F;&quot;&gt;The Onion&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.5ives.com&#x2F;&quot;&gt;5ives&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.mcsweeneys.net&#x2F;&quot;&gt;McSweeny&#x27;s Internet Tendency&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www-users.york.ac.uk&#x2F;~ss44&#x2F;sf&#x2F;eyeargon&#x2F;index.htm&quot;&gt;The Eye of Argon&lt;&#x2F;a&gt;, including the long-lost ending.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;flyingmoose.org&#x2F;tolksarc&#x2F;tolksarc.htm&quot;&gt;The Tolkien Sarcasm Page&lt;&#x2F;a&gt; courtesy of the Flying Moose of Nargothrond.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20060118102426&#x2F;junior.apk.net&#x2F;~drushel&#x2F;b_app_a.html&quot;&gt;A parody of Appendix A of &lt;em&gt;The Lord of the Rings&lt;&#x2F;em&gt;&lt;&#x2F;a&gt; (archived)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.lileks.com&#x2F;institute&#x2F;&quot;&gt;The Institute of Official Cheer&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20070127233529&#x2F;https:&#x2F;&#x2F;www.actsofgord.com&#x2F;index.html&quot;&gt;Acts of Gord&lt;&#x2F;a&gt; (archived)&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20050127094134&#x2F;https:&#x2F;&#x2F;www.fridgemagnet.org.uk&#x2F;kitchen.shtml&quot;&gt;Cleaning the F—ing Kitchen&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dinosaurdracula.com&#x2F;&quot;&gt;Dinosaur Dracula&lt;&#x2F;a&gt; — Interesting old pop culture things.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;a href=&quot;http:&#x2F;&#x2F;www.moviecliches.com&#x2F;&quot;&gt;Movie Cliches List&lt;&#x2F;a&gt; — sort of a precursor to tvtropes.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;adamcadre.ac&#x2F;lyttle&#x2F;&quot;&gt;Little Lytton Contest&lt;&#x2F;a&gt; — a long-running contest to write the worst possible opening to a novel. Unlike the &lt;a href=&quot;https:&#x2F;&#x2F;www.bulwer-lytton.com&#x2F;&quot;&gt;Bulwer Lytton Essay Prize&lt;&#x2F;a&gt;, this one is funny.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20200222221207&#x2F;http:&#x2F;&#x2F;superdickery.com&#x2F;&quot;&gt;Superdickery&lt;&#x2F;a&gt; (defunct, archived) A longrunning website about supposedly
+heroic superheroes acting badly.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;tabletop-rpgs&quot;&gt;Tabletop RPGs&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;forum.rpg.net&#x2F;index.php&quot;&gt;rpg.net&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.indie-rpgs.com&#x2F;forge&#x2F;index.php&quot;&gt;The Forge&lt;&#x2F;a&gt; (archived&#x2F;defunct&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;rpgmuseum.fandom.com&#x2F;wiki&#x2F;Uncle_Figgy%27s_Guide_to_Good_GameMastering&quot;&gt;Uncle Figgy&#x27;s Guide to Good GameMastering&lt;&#x2F;a&gt; — Old, archived.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.roleplayingtips.com&#x2F;&quot;&gt;Roleplaying tips newsletter&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20080617213627&#x2F;http:&#x2F;&#x2F;www.20by20room.com&#x2F;2003&#x2F;11&#x2F;lexicon_an_rpg.html&quot;&gt;Lexicon: an RPG&lt;&#x2F;a&gt; A collaborative world-building game where you make a lexicon for an imaginary world.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;paranoia.allenvarney.com&#x2F;&quot;&gt;Paranoia: The Toothpaste Disaster&lt;&#x2F;a&gt; — An archive of possibly the best &lt;a href=&quot;https:&#x2F;&#x2F;en.wikipedia.org&#x2F;wiki&#x2F;Lexicon_(game)&quot;&gt;Lexicon&lt;&#x2F;a&gt; game ever played.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;The logs of a &lt;a href=&quot;https:&#x2F;&#x2F;web.mit.edu&#x2F;boojum&#x2F;www&#x2F;Cthulhu&#x2F;&quot;&gt;very good Call of Cthulhu game&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.xrpshop.citymax.com&#x2F;page&#x2F;page&#x2F;2561954.htm&quot;&gt;Expeditious Retreat Press&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.omegacomplex.com&#x2F;&quot;&gt;Omega Complex&lt;&#x2F;a&gt; — a slightly older Paranoia website&lt;&#x2F;p&gt;
+&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3 id=&quot;humor&quot;&gt;Humor&lt;&#x2F;h3&gt;
+&lt;p&gt;(Old RPG humor, some of it wildly dated or awful.)&lt;&#x2F;p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.criticalmiss.com&#x2F;backissues.html&quot;&gt;Critical Miss magazine&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20080216080255&#x2F;http:&#x2F;&#x2F;atrocities.primaryerror.net&#x2F;&quot;&gt;Middle Finger Evolution&lt;&#x2F;a&gt; - defunct, archived. Reviews of allegedly terrible or nonfunctional games&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;go-the-game&quot;&gt;Go (the game)&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.cs.cmu.edu&#x2F;~wjh&#x2F;go&#x2F;rules&#x2F;&quot;&gt;A rundown of different formulations of the rules of Go&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.britgo.org&#x2F;rules&#x2F;compare.html&quot;&gt;Similarly, in a table&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;other-games&quot;&gt;Other games&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;www.jesperjuul.dk&#x2F;ludologist&#x2F;&quot;&gt;Ludologist&lt;&#x2F;a&gt; blog, by Jesper Juul.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;history-and-the-like&quot;&gt;History and the like&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.adapalmer.com&#x2F;blog-ex-urbe&#x2F;&quot;&gt;Ex Urbe&lt;&#x2F;a&gt; by Ada Palmer.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;serious-things&quot;&gt;Serious things&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;news-i-sometimes-check&quot;&gt;News I sometimes check&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.washingtonpost.com&#x2F;&quot;&gt;The Washington Post&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.nytimes.com&#x2F;&quot;&gt;The New York Times&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.csmonitor.com&#x2F;&quot;&gt;The Christian Science Monitor&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;about-mental-and-emotional-health&quot;&gt;About mental and emotional health&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;An
+&lt;a href=&quot;https:&#x2F;&#x2F;www.exurbe.com&#x2F;wp-content&#x2F;uploads&#x2F;2020&#x2F;07&#x2F;Healthy-Work-Habits-COVID-1.pdf&quot;&gt;academic work habits guide&lt;&#x2F;a&gt;
+from the COVID pandemic that is generally useful for non-academic and
+less-pandemic-focused areas too.  By &lt;a href=&quot;https:&#x2F;&#x2F;www.adapalmer.com&#x2F;&quot;&gt;Ada Palmer&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
+&lt;li&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;integralguide.com&#x2F;Roadmap&quot;&gt;Integral Guide&lt;&#x2F;a&gt; to wellbeing.
+Promising but not all there yet?&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;politics-and-law&quot;&gt;Politics and law&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.groklaw.net&#x2F;&quot;&gt;Groklaw&lt;&#x2F;a&gt; used to cover important civil liberties
+liberties stuff.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;stuff-in-my-area&quot;&gt;Stuff in my area&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;local-weather&quot;&gt;Local weather&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&amp;lt;airnow.gov&amp;gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.inter-allia.net&#x2F;misc&#x2F;bookmarks&#x2F;airnow.gov&quot;&gt;Local air quality&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.wunderground.com&quot;&gt;Weather underground&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;local-comics-stores-i-like&quot;&gt;Local comics stores I like&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;comicopia.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;comicopia.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;omarsworldofcomics.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;omarsworldofcomics.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;comicazi.com&#x2F;&quot;&gt;http:&#x2F;&#x2F;comicazi.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.hubcomics.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.hubcomics.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.themillionyearpicnic.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.themillionyearpicnic.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;comicopia.com&#x2F;&quot;&gt;Comicopia&lt;&#x2F;a&gt; in Kenmore Square.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;omarsworldofcomics.com&#x2F;&quot;&gt;Omar&#x27;s World of Comics&lt;&#x2F;a&gt; in
+Lexington Center.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;comicazi.com&#x2F;&quot;&gt;Comicazi&lt;&#x2F;a&gt; in Davis Square.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.hubcomics.com&#x2F;&quot;&gt;Hub Comics&lt;&#x2F;a&gt; in Union Square&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.themillionyearpicnic.com&#x2F;&quot;&gt;The Million Year Picnic&lt;&#x2F;a&gt; in
+Harvard Square&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;local-bookstores-i-like&quot;&gt;Local bookstores I like&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;pandemoniumbooks.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;pandemoniumbooks.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;book-rack.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;book-rack.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.belmontbooks.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.belmontbooks.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.harvard.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.harvard.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.brooklinebooksmith.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.brooklinebooksmith.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.portersquarebooks.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.portersquarebooks.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;pandemoniumbooks.com&#x2F;&quot;&gt;Pandemonium Books and Games&lt;&#x2F;a&gt; in
+Central Square.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;book-rack.com&#x2F;&quot;&gt;The Book Rack&lt;&#x2F;a&gt; in Arlington Center is small,
+but has a fine used book selection and a well organized
+special-order system.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.belmontbooks.com&#x2F;&quot;&gt;Belmont Books&lt;&#x2F;a&gt; in Belmont center&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.harvard.com&#x2F;&quot;&gt;The Harvard Bookstore&lt;&#x2F;a&gt; is lovely and not
+affiliated with the university.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.brooklinebooksmith.com&#x2F;&quot;&gt;Brookline Booksmith&lt;&#x2F;a&gt; in Coolidge
+Corner.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.portersquarebooks.com&#x2F;&quot;&gt;Porter Square Books&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h2 id=&quot;local-theater-schedules&quot;&gt;Local theater schedules&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;brattlefilm.org&#x2F;&quot;&gt;https:&#x2F;&#x2F;brattlefilm.org&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.somervilletheatre.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.somervilletheatre.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;coolidge.org&#x2F;&quot;&gt;https:&#x2F;&#x2F;coolidge.org&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.capitoltheatreusa.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;www.capitoltheatreusa.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;regenttheatre.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;regenttheatre.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;lexingtonvenue.com&#x2F;&quot;&gt;https:&#x2F;&#x2F;lexingtonvenue.com&#x2F;&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;brattlefilm.org&#x2F;&quot;&gt;The Brattle&lt;&#x2F;a&gt; in Harvard Square.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.somervilletheatre.com&#x2F;&quot;&gt;The Somerville Theatre&lt;&#x2F;a&gt; in Davis Square.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;coolidge.org&#x2F;&quot;&gt;The Coolidge Corner Theater&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.capitoltheatreusa.com&#x2F;&quot;&gt;The Capitol Theatre&lt;&#x2F;a&gt; in Arlington.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;regenttheatre.com&#x2F;&quot;&gt;The Regent Theatre&lt;&#x2F;a&gt; in Arlington.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;lexingtonvenue.com&#x2F;&quot;&gt;The Lexington Venue&lt;&#x2F;a&gt;.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h1 id=&quot;art-lit-discussion-and-criticism&quot;&gt;Art&#x2F;Lit discussion and criticism&lt;&#x2F;h1&gt;
 &lt;h2 id=&quot;film-review-more-or-less-serious&quot;&gt;Film review (more or less serious)&lt;&#x2F;h2&gt;
 &lt;ul&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;web.archive.org&#x2F;web&#x2F;20060106103915&#x2F;http:&#x2F;&#x2F;www.jabootu.com&#x2F;&quot;&gt;Jabootu&#x27;s bad movie dimension&lt;&#x2F;a&gt;
 (defunct)&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.stomptokyo.com&#x2F;&quot;&gt;Stomp Tokyo&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;andyoucallyourselfascientist.com&#x2F;&quot;&gt;And you call yourself a scientist!&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
-&lt;li&gt;&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;www.flickfilosopher.com&#x2F;&quot;&gt;flick filosopher&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h2 id=&quot;unsorted-for-now&quot;&gt;Unsorted for now.&lt;&#x2F;h2&gt;
+&lt;h2 id=&quot;literary-discussion-analysis-criticism&quot;&gt;Literary discussion, analysis, criticism&lt;&#x2F;h2&gt;
 &lt;ul&gt;
-&lt;li&gt;
-&lt;p&gt;An
-&lt;a href=&quot;https:&#x2F;&#x2F;www.exurbe.com&#x2F;wp-content&#x2F;uploads&#x2F;2020&#x2F;07&#x2F;Healthy-Work-Habits-COVID-1.pdf&quot;&gt;academic work habits guide&lt;&#x2F;a&gt;
-from the COVID pandemic that is generally useful for non-academic and
-less-pandemic-focused areas too.  By &lt;a href=&quot;https:&#x2F;&#x2F;www.adapalmer.com&#x2F;&quot;&gt;Ada Palmer&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Columbia University&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;digitaldante.columbia.edu&#x2F;&quot;&gt;&amp;quot;Digital Dante&amp;quot;&lt;&#x2F;a&gt;
-resources.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;The &lt;a href=&quot;https:&#x2F;&#x2F;integralguide.com&#x2F;Roadmap&quot;&gt;Integral Guide&lt;&#x2F;a&gt; to wellbeing.
-Promising but not all there yet?&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;https:&#x2F;&#x2F;dustri.org&#x2F;b&#x2F;horrible-edge-cases-to-consider-when-dealing-with-music.html&quot;&gt;Horrible edge cases to consider when dealing with music&lt;&#x2F;a&gt;.&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;&lt;a href=&quot;http:&#x2F;&#x2F;hitherby-dragons.wikidot.com&#x2F;&quot;&gt;Hitherby Dragons&lt;&#x2F;a&gt;&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
-&lt;li&gt;
-&lt;p&gt;Finder&lt;&#x2F;p&gt;
-&lt;&#x2F;li&gt;
+&lt;li&gt;Columbia University&#x27;s &lt;a href=&quot;https:&#x2F;&#x2F;digitaldante.columbia.edu&#x2F;&quot;&gt;&amp;quot;Digital Dante&amp;quot;&lt;&#x2F;a&gt;
+resources.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;zompist.wordpress.com&#x2F;category&#x2F;books&#x2F;&quot;&gt;Zompist&lt;&#x2F;a&gt;, a blog with good book reviews.  The website also has interesting conlang resources and an archive of the DFC.&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;!-- Made it through &quot;Movies&quot; on old bookmarks file. --&gt;
+&lt;h2 id=&quot;forums&quot;&gt;Forums&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;nielsenhayden.com&#x2F;makinglight&#x2F;&quot;&gt;Making Light&lt;&#x2F;a&gt; had (has?)
+an amazing community, and so much science fiction&#x2F;cultural stuff.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h2 id=&quot;art-literature-blogging&quot;&gt;Art&#x2F;literature Blogging&lt;&#x2F;h2&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;journal.neilgaiman.com&#x2F;&quot;&gt;Neil Gaiman&lt;&#x2F;a&gt; updates his blog
+occasionally.&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;!-- Made it up to &quot;computer&quot; in ff-2008-1.html --&gt;
+&lt;!-- Made it through &quot;Movies&quot; on old bookmarks file, (at least one version) --&gt;
+&lt;!-- ## Other topics to add
+
+* Tabletop roleplaying games
+  * Nobilis
+  * rpg.net
+
+* Neat speedgaming links
+
+* recommended books
+  * crucial conversations
+  * terra ignota
+  * locked tomb
+
+* Public domain books, etc
+  * gutenberg,
+  * that other one.
+
+* Fan wikis
+  *
+
+* Recipes
+
+--&gt;
+&lt;h1 id=&quot;misc-defunct-things&quot;&gt;Misc defunct things&lt;&#x2F;h1&gt;
+&lt;h3 id=&quot;defunct-blogs&quot;&gt;Defunct blogs&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;a href=&quot;https:&#x2F;&#x2F;altonbrown.com&#x2F;how-to-slice-a-mango&#x2F;&quot;&gt;Alton Brown&lt;&#x2F;a&gt; once blogged.&lt;&#x2F;li&gt;
+&lt;li&gt;&lt;a href=&quot;http:&#x2F;&#x2F;www.infomercial-hell.com&#x2F;blog&#x2F;&quot;&gt;Infomercial Hell&lt;&#x2F;a&gt;&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 </content>
         
     </entry>
@@ -236,12 +300,6 @@ Promising but not all there yet?&lt;&#x2F;p&gt;
         
         <content type="html">&lt;p&gt;(This is a list of albums we own.
 I use it when I&#x27;m out in a used record store and I forget what we have.)&lt;&#x2F;p&gt;
-&lt;h3&gt;ABC_Spanish_In_Motion&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;La_Primavera_Trae_Sopresas &lt;&#x2F;li&gt;
-    &lt;li&gt;Mira_las_hojas_caer &lt;&#x2F;li&gt;
-    &lt;li&gt;Que_Llueva,_Que_Llueva_-_Llego_la_Primavera &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;A_Bangkok_Pop_Compilation&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_Sweets_of_Siam &lt;&#x2F;li&gt;
@@ -249,6 +307,12 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Ab_Baars_&amp;_Terrie_Ex&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Hef &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;ABC_Spanish_In_Motion&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;La_Primavera_Trae_Sopresas &lt;&#x2F;li&gt;
+    &lt;li&gt;Mira_las_hojas_caer &lt;&#x2F;li&gt;
+    &lt;li&gt;Que_Llueva,_Que_Llueva_-_Llego_la_Primavera &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Aerosmith&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -330,6 +394,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Holy_Soul_Jelly_Roll_(disc_3_Ah!) &lt;&#x2F;li&gt;
     &lt;li&gt;Howl_and_Other_Poems &lt;&#x2F;li&gt;
     &lt;li&gt;The_Lion_For_Real &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Amanda Palmer&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;There Will Be No Intermission (recent)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Amanda_Palmer&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -427,18 +495,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;The_B-52’s &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Baby_Dee&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;I_Am_A_Stick &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;BABYMETAL&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Babymetal &lt;&#x2F;li&gt;
     &lt;li&gt;Metal_Resistance &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;BR5-49&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Dog_Days &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;Baby_Dee&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;I_Am_A_Stick &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Bach&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -506,6 +570,12 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Pauls_Boutique &lt;&#x2F;li&gt;
     &lt;li&gt;The_Sounds_Of_Science_(CD2) &lt;&#x2F;li&gt;
     &lt;li&gt;To_The_5_Boroughs &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Beat the Boots! II&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Beat The Boots! III&lt;&#x2F;h3&gt;
+&lt;ul&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Beatallica&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -677,6 +747,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Hidden_History_of_the_Human_Race &lt;&#x2F;li&gt;
     &lt;li&gt;Starspawn &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Bloodywood&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Rakshak (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Blue_Öyster_Cult&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Curse_Of_The_Hidden_Mirror &lt;&#x2F;li&gt;
@@ -744,6 +818,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;The_Good,_The_Bad,_And_The_Argyle &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;BR5-49&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Dog_Days &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Branford_Marsalis&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Renaissance &lt;&#x2F;li&gt;
@@ -781,23 +859,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Butter_08&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Butter_08 &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;CCC Revolved&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;CHIKA&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Fairy_Tales (mp3)&lt;&#x2F;li&gt;
-    &lt;li&gt;Industry_Games (mp3)&lt;&#x2F;li&gt;
-    &lt;li&gt;full_bloom &lt;&#x2F;li&gt;
-    &lt;li&gt;misc &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;CSS&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Cansei_De_Ser_Sexy &lt;&#x2F;li&gt;
-    &lt;li&gt;Donkey &lt;&#x2F;li&gt;
-    &lt;li&gt;La_Liberacion &lt;&#x2F;li&gt;
-    &lt;li&gt;Planta &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;C_Cat_Trance&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -839,9 +900,15 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Merseytrout_-_Live_In_Liverpool_1980 &lt;&#x2F;li&gt;
     &lt;li&gt;Safe_as_Milk &lt;&#x2F;li&gt;
     &lt;li&gt;Shiny_Beast_(Bat_Chain_Puller) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Mirror_Man_Sessions &lt;&#x2F;li&gt;
     &lt;li&gt;The_Spotlight_Kid_Clear_Spot &lt;&#x2F;li&gt;
     &lt;li&gt;Trout_Mask_Replica &lt;&#x2F;li&gt;
     &lt;li&gt;Unconditionally_Guaranteed &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Carcass&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Reek of Putrefaction (recent)&lt;&#x2F;li&gt;
+    &lt;li&gt;Symphonies of Sickness (recent)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Carly_Ptak&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -876,6 +943,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;With_Loving_and_Open_Arms &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;CCC Revolved&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;CeyJay&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Bittersweet_Morsels &lt;&#x2F;li&gt;
@@ -904,6 +974,13 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Chico_&amp;_The_Gypsies&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Vagabundo &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;CHIKA&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Fairy_Tales (mp3)&lt;&#x2F;li&gt;
+    &lt;li&gt;Industry_Games (mp3)&lt;&#x2F;li&gt;
+    &lt;li&gt;full_bloom &lt;&#x2F;li&gt;
+    &lt;li&gt;misc &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Chinchilla&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -950,6 +1027,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Clash&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Give_em_Enough_Rope &lt;&#x2F;li&gt;
+    &lt;li&gt;London_Calling &lt;&#x2F;li&gt;
     &lt;li&gt;The_Singles &lt;&#x2F;li&gt;
     &lt;li&gt;The_Singles_[US_Bonus_Tracks] &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -957,6 +1035,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Les_Misérables_-_1987_Original_Broadway_Cast_CD_1 &lt;&#x2F;li&gt;
     &lt;li&gt;Les_Misérables_-_1987_Original_Broadway_Cast_CD_2 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Clavicus Vile&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The Incipiency (recent)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Clavicus_Vile&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1032,6 +1114,13 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Tweekend &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;CSS&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Cansei_De_Ser_Sexy &lt;&#x2F;li&gt;
+    &lt;li&gt;Donkey &lt;&#x2F;li&gt;
+    &lt;li&gt;La_Liberacion &lt;&#x2F;li&gt;
+    &lt;li&gt;Planta &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Cubanismo&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Reencarnación &lt;&#x2F;li&gt;
@@ -1045,23 +1134,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Czarface_and_MF_Doom&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Czarface_Meets_Metal_Face &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;DJ_Cam&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Revisited_By &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;DJ_Halfred&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Jay-Z_+_Metallica_-_Black_on_Black_(DJ_Halfred) (mp3)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;DJ_Hell&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;NY_Muscle &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;DJ_Vadim&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;U.S.S.R._-_Repertoire_(The_Theory_of_Verticality) &lt;&#x2F;li&gt;
-    &lt;li&gt;Your_Revolution_-_The_Higher_Standard &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Daft_Punk&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1164,6 +1236,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Frankenchrist &lt;&#x2F;li&gt;
     &lt;li&gt;Fresh_Fruit_for_Rotting_Vegetables &lt;&#x2F;li&gt;
+    &lt;li&gt;Give_Me_Convenience_or_Give_Me_Death (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Plastic_Surgery_Disasters &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Dead_Meadow&lt;&#x2F;h3&gt;
@@ -1256,19 +1329,26 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Ken_Burns_Jazz &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;DjBC&lt;&#x2F;h3&gt;
+&lt;h3&gt;DJ_Cam&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;AnotherJay (mp3)&lt;&#x2F;li&gt;
-    &lt;li&gt;Beastles (mp3)&lt;&#x2F;li&gt;
-    &lt;li&gt;DjBCChristmas (mp3)&lt;&#x2F;li&gt;
-    &lt;li&gt;GlassBreaks (mp3)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;DjEarworm&lt;&#x2F;h3&gt;
-&lt;ul&gt;
+    &lt;li&gt;Revisited_By &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Dj_Doc_Rok&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Dj Doc Rok - The Biggie Hendrix Experience (mp3)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;DJ_Halfred&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Jay-Z_+_Metallica_-_Black_on_Black_(DJ_Halfred) (mp3)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;DJ_Hell&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;NY_Muscle &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;DJ_Vadim&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;U.S.S.R._-_Repertoire_(The_Theory_of_Verticality) &lt;&#x2F;li&gt;
+    &lt;li&gt;Your_Revolution_-_The_Higher_Standard &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Django_Reinhardt&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1279,6 +1359,16 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_Classic_Early_Recordings_in_Chronological_Order,_Volume_5 &lt;&#x2F;li&gt;
     &lt;li&gt;The_Classic_Early_Recordings_in_Chronological_Order_Volume_1 &lt;&#x2F;li&gt;
     &lt;li&gt;The_Classic_Early_Recordings_in_Chronological_Order_Volume_2 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;DjBC&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;AnotherJay (mp3)&lt;&#x2F;li&gt;
+    &lt;li&gt;Beastles (mp3)&lt;&#x2F;li&gt;
+    &lt;li&gt;DjBCChristmas (mp3)&lt;&#x2F;li&gt;
+    &lt;li&gt;GlassBreaks (mp3)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;DjEarworm&lt;&#x2F;h3&gt;
+&lt;ul&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Do_Dung&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1541,18 +1631,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;And_The_Weathermen_Shrug_Their_Shoulders &lt;&#x2F;li&gt;
     &lt;li&gt;Scrabbling_At_The_Lock &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;Ex_Orkest&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Een_Rondje_Holland &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Ex_and_Guests&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Instant &lt;&#x2F;li&gt;
     &lt;li&gt;Instant_CD2 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;FLCL&lt;&#x2F;h3&gt;
+&lt;h3&gt;Ex_Orkest&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Furi_Kuri_(FLCL)_-_OST (mp3)&lt;&#x2F;li&gt;
+    &lt;li&gt;Een_Rondje_Holland &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Face_to_Face&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1650,6 +1736,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;For The Birds &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;FLCL&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Furi_Kuri_(FLCL)_-_OST (mp3)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Flight Facilities&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Heavy (feat. Your Smith) -Remixes &lt;&#x2F;li&gt;
@@ -1677,6 +1767,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Fourcolor&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Letter_of_Sounds &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;fractus&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;fractus (recent)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Frank_Black&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1856,12 +1950,12 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_Grand_Wazoo &lt;&#x2F;li&gt;
     &lt;li&gt;The_Greatest_Flops!!! &lt;&#x2F;li&gt;
     &lt;li&gt;The_History_and_Collected_Improvisations_of_Frank_Zappa_and_The_Mothers_of_Invention_424m26_LP_(MrU) &lt;&#x2F;li&gt;
-    &lt;li&gt;The_Hot_Rats_Sessions_(CD1) recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Hot_Rats_Sessions_(CD2) recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Hot_Rats_Sessions_(CD3) recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Hot_Rats_Sessions_(CD4) recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Hot_Rats_Sessions_(CD5) recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Hot_Rats_Sessions_(CD6) recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;The_Hot_Rats_Sessions_(CD1) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Hot_Rats_Sessions_(CD2) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Hot_Rats_Sessions_(CD3) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Hot_Rats_Sessions_(CD4) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Hot_Rats_Sessions_(CD5) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Hot_Rats_Sessions_(CD6) &lt;&#x2F;li&gt;
     &lt;li&gt;The_Lost_Episodes &lt;&#x2F;li&gt;
     &lt;li&gt;The_Lumpy_Money_Project-Object_(Disc_1) &lt;&#x2F;li&gt;
     &lt;li&gt;The_Lumpy_Money_Project-Object_(Disc_2) &lt;&#x2F;li&gt;
@@ -1945,10 +2039,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;One_Nation_Under_A_Groove &lt;&#x2F;li&gt;
     &lt;li&gt;Uncle_Jam_Wants_You_1993_Charly &lt;&#x2F;li&gt;
     &lt;li&gt;Whos_A_Funkadelic &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;GTOs&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Permanent_Damage &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Gamelan_Galak_Tika&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2078,6 +2168,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_New_Despair &lt;&#x2F;li&gt;
     &lt;li&gt;The_Tragic_Treasury &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Grace Love&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Love Notes (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Grace Love and the True Loves&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Grace Love and the True Loves (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Grateful_Dead&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Skeletons_from_the_Closet &lt;&#x2F;li&gt;
@@ -2102,6 +2200,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Yr_Atal_Genhedlaeth &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;GTOs&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Permanent_Damage &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Guns_N_Roses&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Use_Your_Illusion_I &lt;&#x2F;li&gt;
@@ -2114,10 +2216,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;H.P._Lovecraft&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Live_-_May_11,_1968 &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;HPLHS_Presents_-_The_Miskatonic_Connolly_Memorial_Mens_Chorus&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;The_Curious_Sea_Chanties_of_Innsmouth,_Mass. &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Habib_Koité_&amp;_Bamada&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2170,6 +2268,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Hang_On_The_Box&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;For_Every_Punk,_Bitch_&amp;_Arsehole &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Harry Partch&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;U.S. Highball (1946) (recent)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Haru Nemuri&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2237,6 +2339,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;The_Lord_Of_The_Rings_-_The_Fellowship_Of_The_Ring &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;HPLHS_Presents_-_The_Miskatonic_Connolly_Memorial_Mens_Chorus&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The_Curious_Sea_Chanties_of_Innsmouth,_Mass. &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Husker_Du&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_Living_End &lt;&#x2F;li&gt;
@@ -2272,8 +2378,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Princess_Ghibli &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;InfectedMushroom&lt;&#x2F;h3&gt;
+&lt;h3&gt;immortal nightbody&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;BLACK ON BLACK ON BLACK (recent)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Infected_Mushroom&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2284,6 +2391,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_Gathering &lt;&#x2F;li&gt;
     &lt;li&gt;Vicious_Delicious &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;InfectedMushroom&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Information_Society&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Hack &lt;&#x2F;li&gt;
@@ -2291,10 +2401,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Isaac_Hayes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Isaac_Hayes_Greatest_Hit_Singles_(Digital_remastering) &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;JS_Bach&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;The_Well-Tempered_Clavier_-_Kimiko_Ishizaka_[Book_I] &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;J_Dilla_(Jay_Dee)&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2504,6 +2610,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Veneer &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;JS_Bach&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The_Well-Tempered_Clavier_-_Kimiko_Ishizaka_[Book_I] &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Juan_Luis_Guerra&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Areito &lt;&#x2F;li&gt;
@@ -2513,14 +2623,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Justice&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Justice &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;KLF&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Justified_&amp;_Ancient &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;KMD&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;The_Best_Of_KMD &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Kanye_West&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2577,6 +2679,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Yoshimi_Battles_The_Hip_Hop_Robots &lt;&#x2F;li&gt;
     &lt;li&gt;kleptones_24h_split (mp3)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;KLF&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Justified_&amp;_Ancient &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;KMD&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The_Best_Of_KMD &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Komar_&amp;_Melamid_and_Dave_Soldier&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_Peoples_Choice_Music &lt;&#x2F;li&gt;
@@ -2615,10 +2725,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Bricks_Are_Heavy &lt;&#x2F;li&gt;
     &lt;li&gt;Hungry_For_Stink &lt;&#x2F;li&gt;
     &lt;li&gt;The_Beauty_Process_-_Triple_Platinum &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;LOrange_and_Mr._Lif&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;The_Life_And_Death_Of_Scenery &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Lady_Bianca&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2671,13 +2777,13 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Freedoms_Child &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;Le_Mystère_des_voix_bulgares&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Le_Mystère_des_voix_bulgares,_Volume_2 &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Le_concert_impromptu&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Prophetic_Attitude &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Le_Mystère_des_voix_bulgares&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Le_Mystère_des_voix_bulgares,_Volume_2 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Led_Zeppelin&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2740,6 +2846,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Lizzo &amp; Caroline Smith&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;LOrange_and_Mr._Lif&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The_Life_And_Death_Of_Scenery &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Louie Zong&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;BOSS RUSH &lt;&#x2F;li&gt;
@@ -2773,6 +2883,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;2023-03 &lt;&#x2F;li&gt;
     &lt;li&gt;2023-04 &lt;&#x2F;li&gt;
     &lt;li&gt;2023-05 &lt;&#x2F;li&gt;
+    &lt;li&gt;2023-07 (recent)&lt;&#x2F;li&gt;
     &lt;li&gt;Luna &lt;&#x2F;li&gt;
     &lt;li&gt;The Cool Gayageum Medly &lt;&#x2F;li&gt;
     &lt;li&gt;The Great Gayageum Medly &lt;&#x2F;li&gt;
@@ -2798,29 +2909,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Arular &lt;&#x2F;li&gt;
     &lt;li&gt;Kala &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;MC_Frontalot&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Favoritism &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;MC_Lyte&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;The_Very_Best_Of &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;MF_DOOM&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Born_Like_This &lt;&#x2F;li&gt;
-    &lt;li&gt;EP &lt;&#x2F;li&gt;
-    &lt;li&gt;Live_from_Planet_X &lt;&#x2F;li&gt;
-    &lt;li&gt;MM..Food &lt;&#x2F;li&gt;
-    &lt;li&gt;Metal_Fingers_Presents...Special_Herbs_7,8 &lt;&#x2F;li&gt;
-    &lt;li&gt;Operation_Doomsday &lt;&#x2F;li&gt;
-    &lt;li&gt;Operation_Doomsday_-_Disc_Two &lt;&#x2F;li&gt;
-    &lt;li&gt;Special_Herbs,_Vol._3_&amp;_4 &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;MU330&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Press &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Macka_B&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Here_Comes_Trouble &lt;&#x2F;li&gt;
@@ -2830,6 +2918,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Macklemore_&amp;_Ryan_Lewis&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_Heist &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Macy_Gray&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;On_How_Life_Is (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Made_Out_of_Babies&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2930,6 +3022,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Mary &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;MASSIMO GIUNTOLI&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;F.I.T. - Found In Translation (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;MASTER BOOT RECORD&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;DIRECT MEMORY ACCESS (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Mastodon&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Blood_Mountain &lt;&#x2F;li&gt;
@@ -2947,11 +3047,13 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Lies_Heavy &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;MeShell_NdegeOcello&lt;&#x2F;h3&gt;
+&lt;h3&gt;MC_Frontalot&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Comfort_Woman &lt;&#x2F;li&gt;
-    &lt;li&gt;Peace_Beyond_Passion &lt;&#x2F;li&gt;
-    &lt;li&gt;Plantation_Lullabies &lt;&#x2F;li&gt;
+    &lt;li&gt;Favoritism &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;MC_Lyte&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The_Very_Best_Of &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Mediaeval_Baebes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2972,9 +3074,26 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;The_Secret_Migration &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;MeShell_NdegeOcello&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Comfort_Woman &lt;&#x2F;li&gt;
+    &lt;li&gt;Peace_Beyond_Passion &lt;&#x2F;li&gt;
+    &lt;li&gt;Plantation_Lullabies &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Meshuggah&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;obZen &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;MF_DOOM&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Born_Like_This &lt;&#x2F;li&gt;
+    &lt;li&gt;EP &lt;&#x2F;li&gt;
+    &lt;li&gt;Live_from_Planet_X &lt;&#x2F;li&gt;
+    &lt;li&gt;MM..Food &lt;&#x2F;li&gt;
+    &lt;li&gt;Metal_Fingers_Presents...Special_Herbs_7,8 &lt;&#x2F;li&gt;
+    &lt;li&gt;Operation_Doomsday &lt;&#x2F;li&gt;
+    &lt;li&gt;Operation_Doomsday_-_Disc_Two &lt;&#x2F;li&gt;
+    &lt;li&gt;Special_Herbs,_Vol._3_&amp;_4 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Middlesex_County_Volunteers&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3034,6 +3153,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Carnival_Of_Souls &lt;&#x2F;li&gt;
     &lt;li&gt;Madra &lt;&#x2F;li&gt;
     &lt;li&gt;Suspiria &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;misc_old_crud&lt;&#x2F;h3&gt;
+&lt;ul&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Mitsuko_Uchida_(piano)&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3113,6 +3235,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Symphony_No._40 &lt;&#x2F;li&gt;
     &lt;li&gt;The_Masterpiece_Collection_-_Mozart_[PartI] &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Mr. Lif- The Polish Ambassador- Ayla Nereo&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The Polish Ambassador- Ayla Nereo - Terra Bella (full album) (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Mr._Bungle&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;California &lt;&#x2F;li&gt;
@@ -3129,6 +3255,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Live_at_the_Middle_East &lt;&#x2F;li&gt;
     &lt;li&gt;Mo_Mega &lt;&#x2F;li&gt;
     &lt;li&gt;Sleepyheads &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;MU330&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Press &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Muddy_World&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3157,15 +3287,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Big_Daddy_Multitude &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;NOFX&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Punk_In_Drublic &lt;&#x2F;li&gt;
-    &lt;li&gt;Ribbed &lt;&#x2F;li&gt;
-    &lt;li&gt;S&amp;M_Airlines &lt;&#x2F;li&gt;
-    &lt;li&gt;Single_Album &lt;&#x2F;li&gt;
-    &lt;li&gt;Together_On_The_Road_[Bootleg] &lt;&#x2F;li&gt;
-    &lt;li&gt;White_Trash,_Two_Heebs,_And_A_Bean &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Naked_City&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Torture_Garden &lt;&#x2F;li&gt;
@@ -3177,9 +3298,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Napalm_Death&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Fear,_Emptiness,_Despair recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;Noise_For_Musics_Sake_(CD2) recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;Noise_for_Musics_Sake_(CD1) recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;Fear,_Emptiness,_Despair &lt;&#x2F;li&gt;
+    &lt;li&gt;Noise_For_Musics_Sake_(CD2) &lt;&#x2F;li&gt;
+    &lt;li&gt;Noise_for_Musics_Sake_(CD1) &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Nazgul&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3275,6 +3396,15 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_Beacon_Street_Collection &lt;&#x2F;li&gt;
     &lt;li&gt;Tragic_Kingdom &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;NOFX&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Punk_In_Drublic &lt;&#x2F;li&gt;
+    &lt;li&gt;Ribbed &lt;&#x2F;li&gt;
+    &lt;li&gt;S&amp;M_Airlines &lt;&#x2F;li&gt;
+    &lt;li&gt;Single_Album &lt;&#x2F;li&gt;
+    &lt;li&gt;Together_On_The_Road_[Bootleg] &lt;&#x2F;li&gt;
+    &lt;li&gt;White_Trash,_Two_Heebs,_And_A_Bean &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Norma_Tanega&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Im_The_Sky_Studio_and_Demo_Recordings,_1964-1971_(CD1) &lt;&#x2F;li&gt;
@@ -3292,7 +3422,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Obscura&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Akroasis recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;Akroasis (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Diluvium &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Ofra_Haza&lt;&#x2F;h3&gt;
@@ -3341,10 +3471,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Two_Pianos_are_Better_than_One &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;PFR&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Goldies_Last_Day &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Panda_Bear&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Young_Prayer &lt;&#x2F;li&gt;
@@ -3353,14 +3479,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Best_Of_Give_Up_The_Funk &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;Paul_Simon&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Negotiations_And_Love_Songs_1971-1986 &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Paul_and_Storm&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;News_To_Us &lt;&#x2F;li&gt;
     &lt;li&gt;Opening_Band &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Paul_Simon&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Negotiations_And_Love_Songs_1971-1986 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Perceptionists&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3396,6 +3522,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Peter_Pears,_Julian_Bream,_Emma_Kirkby&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_World_of_Elizabethan_Music &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;PFR&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Goldies_Last_Day &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Philadelphia_Orchestra&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3562,10 +3692,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Oeuvre &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;QUnit&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;members.home.nl (mp3)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Quasimoto&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_Further_Adventures_Of_Lord_Quas &lt;&#x2F;li&gt;
@@ -3585,6 +3711,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Queen_II &lt;&#x2F;li&gt;
     &lt;li&gt;Sheer_Heart_Attack &lt;&#x2F;li&gt;
     &lt;li&gt;The_Miracle &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;QUnit&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;members.home.nl (mp3)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;R.E.M.&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3713,6 +3843,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Respect &lt;&#x2F;li&gt;
     &lt;li&gt;Spooked &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Roches&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Keep_On_Doing &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Rockabye_Baby&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Rockabye_Baby!_Lullaby_Renditions_of_The_Flaming_Lips[from_Rockabye_Baby!] &lt;&#x2F;li&gt;
@@ -3748,10 +3882,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Ruthmar_Boyer&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;I_Cant_Let_Go &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;SHOW-YA&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;SHOW-YA_GREATEST_(1985-1990)_SHM-CD_TOCT-95147 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Sad Snack&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3890,6 +4020,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Shostakovich-_Symphony_13 &lt;&#x2F;li&gt;
     &lt;li&gt;Shostakovich_-_Symphonies_2_&amp;_3,_The_Age_of_Gold &lt;&#x2F;li&gt;
     &lt;li&gt;Shostakovich_-_The_Symphony_Edition;_Bernstein_NYPO &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;SHOW-YA&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;SHOW-YA_GREATEST_(1985-1990)_SHM-CD_TOCT-95147 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Shuggie_Otis&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4100,11 +4234,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;The_Essence_of_T-Bone_Walker &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;TLC&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;CrazySexyCool &lt;&#x2F;li&gt;
-    &lt;li&gt;Now_&amp;_Forever,_The_Hits &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Taj_Mahal&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Shake_Sugaree &lt;&#x2F;li&gt;
@@ -4173,9 +4302,17 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Solace (mp3)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;The Paradox Princess&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;CREATING A TIME PARADOX (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;The_1975&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;A_Brief_Inquiry_Into_Online_Relationships &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;The_Bobs&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Too_Many_Santas! (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;The_Bonzo_Dog_Band&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4183,13 +4320,17 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Vol_2__The_Outro (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Vol_3__Dog_Ends (mp3)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;The_B‐52s&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Funplex (recent, CD)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;The_Notorious_B.I.G.&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Born_Again recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;Born_Again (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;The_Rutles&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Archaeology recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;Archaeology (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;The_Witching_Tale&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4198,6 +4339,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Thelonious_Monk&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Genius_Of_Modern_Music,_Vol._2 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;TheRub&lt;&#x2F;h3&gt;
+&lt;ul&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;They_Might_Be_Giants&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4261,6 +4405,11 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Tim_Maia&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;World_Psychedelic_Classics_4_-_Nobody_Can_Live_Forever_-_The_Existential_Soul_of &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;TLC&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;CrazySexyCool &lt;&#x2F;li&gt;
+    &lt;li&gt;Now_&amp;_Forever,_The_Hits &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Toasters&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4334,6 +4483,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Breaking_the_Ethers &lt;&#x2F;li&gt;
     &lt;li&gt;East_Of_The_Sun &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;TURQUOISEDEATH&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Se Bueno (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Tuxedomoon&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Desire - No Tears (recent)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Two_For_Brazil&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Two_For_Brazil &lt;&#x2F;li&gt;
@@ -4347,10 +4504,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_Joshua_Tree &lt;&#x2F;li&gt;
     &lt;li&gt;The_Unforgettable_Fire &lt;&#x2F;li&gt;
     &lt;li&gt;War &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;UZB&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Unmatched Zappa Bands - Come Dance With Zappa! &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Uncle_Tupelo&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4388,12 +4541,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;DISC8 (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;DISC9 (mp3)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;VNV_Nation&lt;&#x2F;h3&gt;
+&lt;h3&gt;UZB&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Futureperfect &lt;&#x2F;li&gt;
-    &lt;li&gt;Judgement &lt;&#x2F;li&gt;
-    &lt;li&gt;Matter_+_Form &lt;&#x2F;li&gt;
-    &lt;li&gt;Praise_the_Fallen &lt;&#x2F;li&gt;
+    &lt;li&gt;Unmatched Zappa Bands - Come Dance With Zappa! &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Various&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4454,7 +4604,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Golden_Throats_-_The_Great_Celebrity_Sing-Off! &lt;&#x2F;li&gt;
     &lt;li&gt;Golden_Throats_4_-_Celebrities_Butcher_Songs_Of_The_Beatles &lt;&#x2F;li&gt;
     &lt;li&gt;Goosebumps &lt;&#x2F;li&gt;
-    &lt;li&gt;Greatest_Folksingers_of_the_Sixties recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;Greatest_Folksingers_of_the_Sixties (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Handels_Greatest_Hits &lt;&#x2F;li&gt;
     &lt;li&gt;HavaNagilaCollection (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Ill_Take_You_There &lt;&#x2F;li&gt;
@@ -4575,15 +4725,22 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Verdi&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;La_Traviata_CD1 recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;La_Traviata_CD2 recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;Otello_CD1 recent, CD&lt;&#x2F;li&gt;
-    &lt;li&gt;Otello_CD2 recent, CD&lt;&#x2F;li&gt;
+    &lt;li&gt;La_Traviata_CD1 (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;La_Traviata_CD2 (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Otello_CD1 (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Otello_CD2 (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Viktor_Vaughn&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Vaudeville_Villain &lt;&#x2F;li&gt;
     &lt;li&gt;Venomous_Villain &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;VNV_Nation&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Futureperfect &lt;&#x2F;li&gt;
+    &lt;li&gt;Judgement &lt;&#x2F;li&gt;
+    &lt;li&gt;Matter_+_Form &lt;&#x2F;li&gt;
+    &lt;li&gt;Praise_the_Fallen &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Voltaire&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4714,10 +4871,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Lets_Submerge_-_The_Anthology_-_Disc_1 &lt;&#x2F;li&gt;
     &lt;li&gt;Lets_Submerge_-_The_Anthology_-_Disc_2 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;XTC&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Nonsuch &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Xiu_Xiu&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;La_Foret &lt;&#x2F;li&gt;
@@ -4725,6 +4878,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Xordox&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Omniverse &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;XTC&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Nonsuch &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Yeah_Yeah_Yeahs&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4794,9 +4951,8 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Ziggy Stardust Remixed&lt;&#x2F;h3&gt;
 &lt;ul&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;abcde.fc11b012&lt;&#x2F;h3&gt;
+&lt;h3&gt;Zips&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;data-musicbrainz recent, CD&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 </content>
         
