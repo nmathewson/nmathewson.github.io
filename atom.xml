@@ -5,12 +5,12 @@
     <link href="https://www.inter-allia.net/atom.xml" rel="self" type="application/atom+xml"/>
     <link href="https://www.inter-allia.net"/>
     <generator uri="https://www.getzola.org/">Zola</generator>
-    <updated>2024-07-05T00:00:00+00:00</updated>
+    <updated>2024-10-11T00:00:00+00:00</updated>
     <id>https://www.inter-allia.net/atom.xml</id>
     <entry xml:lang="en">
         <title>List of albums</title>
-        <published>2024-07-05T00:00:00+00:00</published>
-        <updated>2024-07-05T00:00:00+00:00</updated>
+        <published>2024-10-11T00:00:00+00:00</published>
+        <updated>2024-10-11T00:00:00+00:00</updated>
         <author>
           <name>Unknown</name>
         </author>
@@ -45,6 +45,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Garbology (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Aesop Waits&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Tom Shall Pass (digital only)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Aesop_Rock&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Bazooka_Tooth &lt;&#x2F;li&gt;
@@ -53,6 +57,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Labor_Days &lt;&#x2F;li&gt;
     &lt;li&gt;Skelethon &lt;&#x2F;li&gt;
     &lt;li&gt;The_Impossible_Kid &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Afro-Cuban_All_Stars&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;A_toda_Cuba_le_gusta &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Against Me!&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -141,6 +149,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Theatre_is_Evil &lt;&#x2F;li&gt;
     &lt;li&gt;Who_Killed_Amanda_Palmer &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Amara_Touré&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;1973-1980 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Amon_Amarth&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;With_Oden_on_Our_Side &lt;&#x2F;li&gt;
@@ -203,7 +215,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Apocalyptica&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;7th_Symphony &lt;&#x2F;li&gt;
-    &lt;li&gt;Cult (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Cult &lt;&#x2F;li&gt;
     &lt;li&gt;Worlds_Collide &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Aqualung&lt;&#x2F;h3&gt;
@@ -217,7 +229,11 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Areon_Flutes&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;No_Era (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;No_Era &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Aretha_Franklin&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Sweet_Bitter_Love (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Arlo_Guthrie&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -240,9 +256,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Atheist&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Jupiter &lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;Audioboox&lt;&#x2F;h3&gt;
-&lt;ul&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Automator&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -299,7 +312,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Bango&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Bango (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Bango &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Banshee&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -435,6 +448,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;I_Bificus &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Big Black&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Songs About Fucking (digital only)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Big_Audio_Dynamite&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Megatop_Phoenix &lt;&#x2F;li&gt;
@@ -445,7 +462,8 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Billie_Holiday&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;1935-1958 (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;1935-1958 &lt;&#x2F;li&gt;
+    &lt;li&gt;Lady_in_Satin (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;The_Essential_Billie_Holiday_-_Carnegie_Hall_Concert_Recorded_Live &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Billie_Joe_Armstrong_and_Norah_Jones&lt;&#x2F;h3&gt;
@@ -587,7 +605,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Bonde do Rolê&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Tropicalbacanal (recent)&lt;&#x2F;li&gt;
+    &lt;li&gt;Tropicalbacanal (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Boney_M.&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -628,6 +646,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Breeders&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;All_Nerve &lt;&#x2F;li&gt;
     &lt;li&gt;Last Splash (30th Anniversary Edition) (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Brendan_Taaffe&lt;&#x2F;h3&gt;
@@ -636,6 +655,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Brian_Eno&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;Ambient_1_Music_for_Airports (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Apollo_(Atmospheres_&amp;_Soundtracks) &lt;&#x2F;li&gt;
     &lt;li&gt;Before_and_after_Science &lt;&#x2F;li&gt;
     &lt;li&gt;Here_Come_The_Warm_Jets &lt;&#x2F;li&gt;
@@ -659,6 +679,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Butter_08&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Butter_08 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Béla_Fleck_and_the_Flecktones&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Ten_From_Little_Worlds (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;C_Cat_Trance&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -778,7 +802,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Cheba_Fadela_and_Cheb_Sarhaoui&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Live (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Live &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Chemical_Brothers&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -932,6 +956,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Cowboy_Bebop&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Cowboy_Bebop_OST_limited (mp3)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Cramps&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Look_Mom_No_Head! &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Crystal_Method&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1211,6 +1239,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Bella Ciao - Miss OGrady (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Hum Of Life (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Mental Blocks For All Ages (digital only)&lt;&#x2F;li&gt;
+    &lt;li&gt;Unbend (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Dog_Faced_Hermans&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1319,6 +1348,11 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;The_Masterpiece_Collection_Grieg &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Electric Six&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Streets Of Gold (digital only)&lt;&#x2F;li&gt;
+    &lt;li&gt;Turquoise (digital only)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Electric_Junkyard_Gamelan&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Live_From_HERE &lt;&#x2F;li&gt;
@@ -1329,7 +1363,8 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Elisapie&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Inuktitut (recent)&lt;&#x2F;li&gt;
+    &lt;li&gt;Inuktitut (digital only)&lt;&#x2F;li&gt;
+    &lt;li&gt;The Ballad of the Runaway Girl (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Ella_Fitzgerald&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1349,6 +1384,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Ella_Fitzgerald_&amp;_Louis_Armstrong&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Ella_and_Louis &lt;&#x2F;li&gt;
+    &lt;li&gt;Porgy_&amp;_Bess (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Ella_Jenkins&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1376,6 +1412,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;The_Juliet_Letters_(Expanded)_-_Disc_1_of_2 &lt;&#x2F;li&gt;
     &lt;li&gt;The_Juliet_Letters_(Expanded)_-_Disc_2_of_2 &lt;&#x2F;li&gt;
     &lt;li&gt;This_Year’s_Model &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Elvis_Costello_&amp;_The_Attractions&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Trust (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Emerson,_Lake_&amp;_Palmer&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1532,6 +1572,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Fern_Jones&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;The_Glory_Road &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;FiDOplaysZAPPA&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;The Great Escape For All Of You - Live 2023 (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Fiery_Furnaces&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -1870,7 +1914,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Freezepop&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Fancy_Ultra-fresh &lt;&#x2F;li&gt;
-    &lt;li&gt;Fantasizer (recent)&lt;&#x2F;li&gt;
+    &lt;li&gt;Fantasizer (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Fashion_Impression_Function &lt;&#x2F;li&gt;
     &lt;li&gt;Imaginary Friends (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Rare_Bird (digital only)&lt;&#x2F;li&gt;
@@ -1967,6 +2011,8 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Giuseppe_Verdi&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;La_Traviata_(Carteri,_Valletti,_Warren,_Monteux)_(CD1) &lt;&#x2F;li&gt;
+    &lt;li&gt;La_Traviata_(Carteri,_Valletti,_Warren,_Monteux)_(CD2) &lt;&#x2F;li&gt;
     &lt;li&gt;Rigoletto_CD1 &lt;&#x2F;li&gt;
     &lt;li&gt;Rigoletto_CD2 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -1974,6 +2020,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Father_Of_Time (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;King (digital only)&lt;&#x2F;li&gt;
+    &lt;li&gt;The Ogre (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Go_Home_Productions&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2148,6 +2195,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Doremi_Fasol_Latido &lt;&#x2F;li&gt;
     &lt;li&gt;Spacehawks &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Hawkwind_Light_Orchestra&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Stellar_Variations (recent, CD)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Hector_Coco_Barez&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;El Laberinto del Coco (digital only)&lt;&#x2F;li&gt;
@@ -2246,6 +2297,11 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Immortal Nightbody&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;BLACK ON BLACK ON BLACK (digital only)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;Indigo_Girls&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;1200_Curfews_(CD1) (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;1200_Curfews_(CD2) (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Infected_Mushroom&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2520,8 +2576,8 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Kevin_Sun&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;The_Depths_of_Memory_(CD1) (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Depths_of_Memory_(CD2) (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;The_Depths_of_Memory_(CD1) &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Depths_of_Memory_(CD2) &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Kills&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2701,7 +2757,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Candide_(1956_original_Broadway_cast) &lt;&#x2F;li&gt;
     &lt;li&gt;Candide_(1989)_(CD1) &lt;&#x2F;li&gt;
     &lt;li&gt;Candide_(1989)_(CD2) &lt;&#x2F;li&gt;
-    &lt;li&gt;West_Side_Story_(1957_original_Broadway_cast) (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;West_Side_Story_(1957_original_Broadway_cast) &lt;&#x2F;li&gt;
     &lt;li&gt;Wonderful_Town &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Leonard_Cohen&lt;&#x2F;h3&gt;
@@ -2889,7 +2945,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Manu Chao&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Próxima Estación- Esperanza (digital only)&lt;&#x2F;li&gt;
-    &lt;li&gt;Radio Bemba Sound System (Live) (recent)&lt;&#x2F;li&gt;
+    &lt;li&gt;Radio Bemba Sound System (Live) (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Manu_Chao&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -2996,7 +3052,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Middle Kids&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Today We’re The Greatest (recent)&lt;&#x2F;li&gt;
+    &lt;li&gt;Today We’re The Greatest (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Middlesex_County_Volunteers&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3004,6 +3060,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Midnight_Oil&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;Blue_Sky_Mining (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Red_Sails_in_the_Sunset &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Mieskuoro_Huutajat&lt;&#x2F;h3&gt;
@@ -3023,7 +3080,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Mighty_Sparrow&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;The_Slave (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;The_Slave &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Miho Hatori&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3116,7 +3173,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Motihari_Brigade&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Algorithm_&amp;_Blues (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Algorithm_&amp;_Blues &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Motor_Humming&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3213,7 +3270,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Mão_Morta&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Müller_no_Hotel_Hessicher_Hof (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Müller_no_Hotel_Hessicher_Hof &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Naked_City&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3298,18 +3355,15 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Litanies (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;Nick_Cave_&amp;_the_Bad_Seeds&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Abattoir_Blues (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;The_Lyre_of_Orpheus (recent, CD)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Nick_Cave_and_the_Bad_Seeds&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;Abattoir_Blues &lt;&#x2F;li&gt;
     &lt;li&gt;Live_Seeds &lt;&#x2F;li&gt;
     &lt;li&gt;Murder_Ballads &lt;&#x2F;li&gt;
     &lt;li&gt;Tender_Prey &lt;&#x2F;li&gt;
     &lt;li&gt;The_Boatman’s_Call &lt;&#x2F;li&gt;
     &lt;li&gt;The_Good_Son &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Lyre_of_Orpheus &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Nina_Simone&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3369,10 +3423,12 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Odradek&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;Liminal (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Sun Seeker (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Ofege&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;Higher Plane Breeze (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Try and Love -OFFICIAL (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Ofra_Haza&lt;&#x2F;h3&gt;
@@ -3411,6 +3467,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Alkaline River (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Otis_Redding&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Respect (recent, CD)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Otoboke Beaver&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;SUPER CHAMPON スーパーチャンポン (digital only)&lt;&#x2F;li&gt;
@@ -3421,7 +3481,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Oum_Kolthoum&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Laylat_Hob (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Laylat_Hob &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;OutKast&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3561,7 +3621,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Pop_Dellarte&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Free_Pop (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Free_Pop &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Popol_Vuh&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3771,7 +3831,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Richard Cheese&lt;&#x2F;h3&gt;
 &lt;ul&gt;
+    &lt;li&gt;Blue No Matter Who- (2024) (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Licensed To Spill- (2017) (digital only)&lt;&#x2F;li&gt;
+    &lt;li&gt;Numbers Of The Beast- (2020) (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;OK Bartender- (2010) (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Supermassive Black Tux- (2015) (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -3812,6 +3874,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Electronic_Explorations_from_his_Studio_ &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Robots In Disguise&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Volume 2 (digital only)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Robots_in_Disguise&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Robots_in_Disguise &lt;&#x2F;li&gt;
@@ -3837,7 +3903,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Rogers_and_Hammerstein&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Oklahoma!_(Studio_Cast,_1964) (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Oklahoma!_(Studio_Cast,_1964) &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Rolling_Stones&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3853,12 +3919,14 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Roxy_Music&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Avalon &lt;&#x2F;li&gt;
-    &lt;li&gt;Stranded (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Stranded &lt;&#x2F;li&gt;
     &lt;li&gt;Viva!_Roxy_Music &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Rubblebucket&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Omega_La_La &lt;&#x2F;li&gt;
+    &lt;li&gt;Oops...-I-Did-It-Again &lt;&#x2F;li&gt;
+    &lt;li&gt;Sun Machine &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Rush&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -3907,7 +3975,9 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;ul&gt;
     &lt;li&gt;Afterglow_Live &lt;&#x2F;li&gt;
     &lt;li&gt;Fumbling_Towards_Ecstasy &lt;&#x2F;li&gt;
+    &lt;li&gt;Mirrorball (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Steaming &lt;&#x2F;li&gt;
+    &lt;li&gt;Surfacing (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;Touch &lt;&#x2F;li&gt;
     &lt;li&gt;Wintersong &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
@@ -4024,10 +4094,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Sibelius&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Philharmonia_Orchestra &lt;&#x2F;li&gt;
-    &lt;li&gt;Symphonies_nos._1_&amp;_6 (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;Symphonies_nos._2_&amp;_7 (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;Symphonies_nos._3_&amp;_4 (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;Symphony_no._5 (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Symphonies_nos._1_&amp;_6 &lt;&#x2F;li&gt;
+    &lt;li&gt;Symphonies_nos._2_&amp;_7 &lt;&#x2F;li&gt;
+    &lt;li&gt;Symphonies_nos._3_&amp;_4 &lt;&#x2F;li&gt;
+    &lt;li&gt;Symphony_no._5 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Sigur_Rós&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4039,8 +4109,8 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Simbiose&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Bounded_in_Adversity (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;Trapped (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Bounded_in_Adversity &lt;&#x2F;li&gt;
+    &lt;li&gt;Trapped &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Singing_Science&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4048,7 +4118,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Sisters_Euclid&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Run_Neil_Run (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Run_Neil_Run &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Sisters_of_Mercy&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4355,13 +4425,18 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Vol_2__The_Outro (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Vol_3__Dog_Ends (mp3)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;The_Breeders&lt;&#x2F;h3&gt;
+&lt;h3&gt;The_Commodores&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;All_Nerve (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;All_The_Greatest_Hits (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;The_Cramps&lt;&#x2F;h3&gt;
+&lt;h3&gt;The_Heptones&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Look_Mom_No_Head! (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Pressure! (recent, CD)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;The_Rolling_Stones&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Exile_on_Main_St. (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Let_It_Bleed (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;The_Witching_Tale&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4370,6 +4445,10 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;h3&gt;Thelonious_Monk&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Genius_Of_Modern_Music,_Vol._2 &lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
+&lt;h3&gt;THEMM!&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;Show Pony (digital only)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;TheRub&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4485,7 +4564,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Toto_Bissanthe&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Toto_Bissanthe_Sings_Haiti (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Toto_Bissanthe_Sings_Haiti &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Touhou&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4518,6 +4597,11 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Breaking_the_Ethers &lt;&#x2F;li&gt;
     &lt;li&gt;East_Of_The_Sun &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
+&lt;h3&gt;Tunji_Oyelana&lt;&#x2F;h3&gt;
+&lt;ul&gt;
+    &lt;li&gt;A_Nigerian_Retrospective_1966-79_(CD1) (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;A_Nigerian_Retrospective_1966-79_(CD2) (recent, CD)&lt;&#x2F;li&gt;
+&lt;&#x2F;ul&gt;
 &lt;h3&gt;Turquoisedeath&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Se Bueno (digital only)&lt;&#x2F;li&gt;
@@ -4535,7 +4619,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;October_(Japanese_Import) &lt;&#x2F;li&gt;
     &lt;li&gt;Pop &lt;&#x2F;li&gt;
     &lt;li&gt;The_Best_Of_(1980-1990)_(Disc_1) &lt;&#x2F;li&gt;
-    &lt;li&gt;The_Best_of_1980-1990_&amp;_B-Sides,_Disc_2 &lt;&#x2F;li&gt;
+    &lt;li&gt;The_Best_Of_(1980-1990)_(Disc_2) &lt;&#x2F;li&gt;
     &lt;li&gt;The_Joshua_Tree &lt;&#x2F;li&gt;
     &lt;li&gt;The_Unforgettable_Fire &lt;&#x2F;li&gt;
     &lt;li&gt;War &lt;&#x2F;li&gt;
@@ -4609,7 +4693,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Best_of_Bootie_2017 (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Best_of_Bootie_2018 (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Bolero_and_Other_Orchestral_Favourites_Volume_1 &lt;&#x2F;li&gt;
-    &lt;li&gt;Butchering_the_Beatles_A_Headbashing_Tribute (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Butchering_the_Beatles_A_Headbashing_Tribute &lt;&#x2F;li&gt;
     &lt;li&gt;Cant_Stop_It!_Australian_Post-Punk_1978-82 &lt;&#x2F;li&gt;
     &lt;li&gt;Carolina_Funk &lt;&#x2F;li&gt;
     &lt;li&gt;Classical_Music_Composed_by_Computer_-_Experiments_in_Musical_Intelligence_by_David_Cope &lt;&#x2F;li&gt;
@@ -4639,12 +4723,13 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;G-Spots_-_The_spacey_folk_electro-horror_sounds_of_the_Studio_G_Library &lt;&#x2F;li&gt;
     &lt;li&gt;Girls_On_45_-_Volume_3_ &lt;&#x2F;li&gt;
     &lt;li&gt;Go_And_Do_It_-_The_Aberrant_Compilations__(CD1) &lt;&#x2F;li&gt;
-    &lt;li&gt;Goin’_Home_A_Tribute_to_Fats_Domino_(CD1) (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;Goin’_Home_A_Tribute_to_Fats_Domino_(CD2) (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Goin’_Home_A_Tribute_to_Fats_Domino_(CD1) &lt;&#x2F;li&gt;
+    &lt;li&gt;Goin’_Home_A_Tribute_to_Fats_Domino_(CD2) &lt;&#x2F;li&gt;
     &lt;li&gt;Golden_Throats_-_The_Great_Celebrity_Sing-Off! &lt;&#x2F;li&gt;
     &lt;li&gt;Golden_Throats_4_-_Celebrities_Butcher_Songs_Of_The_Beatles &lt;&#x2F;li&gt;
     &lt;li&gt;Goosebumps &lt;&#x2F;li&gt;
     &lt;li&gt;Greatest_Folksingers_of_the_Sixties &lt;&#x2F;li&gt;
+    &lt;li&gt;Guitar Days - An Unlikely Story of Brazilian Music (digital only)&lt;&#x2F;li&gt;
     &lt;li&gt;Handels_Greatest_Hits &lt;&#x2F;li&gt;
     &lt;li&gt;HavaNagilaCollection (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Ill_Take_You_There &lt;&#x2F;li&gt;
@@ -4671,12 +4756,13 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;One_Hit_Wonders_-_A_Novelty_Experience &lt;&#x2F;li&gt;
     &lt;li&gt;Outside_The_Inbox (mp3)&lt;&#x2F;li&gt;
     &lt;li&gt;Pachelbels_Greatest_Hit_-_Canon_in_D &lt;&#x2F;li&gt;
-    &lt;li&gt;Pan_Woman_-_Steelbands_of_Trinidad_and_Tobago (recent, CD)&lt;&#x2F;li&gt;
+    &lt;li&gt;Pan_Woman_-_Steelbands_of_Trinidad_and_Tobago &lt;&#x2F;li&gt;
     &lt;li&gt;People_Take_Warning!_Disc_1_-_Man_V_Machine &lt;&#x2F;li&gt;
     &lt;li&gt;People_Take_Warning!_Disc_2_-_Man_V_Nature &lt;&#x2F;li&gt;
     &lt;li&gt;People_Take_Warning!_Disc_3_-_Man_V_Man_(And_Woman,_Too) &lt;&#x2F;li&gt;
     &lt;li&gt;Persian_Underground &lt;&#x2F;li&gt;
     &lt;li&gt;Personal_Space_-_Electronic_Soul_1974-1984 &lt;&#x2F;li&gt;
+    &lt;li&gt;Peter_Was_A_Fisherman_The_1939_Trinidad_Field_Recordings_of_Melville_and_Frences_Kerskovits &lt;&#x2F;li&gt;
     &lt;li&gt;Pisces_-_A_Lovely_Sight &lt;&#x2F;li&gt;
     &lt;li&gt;Pixar_All-Time_Favorites &lt;&#x2F;li&gt;
     &lt;li&gt;Pomegranates_-_Persian_Pop,_Funk,_Folk,_and_Psych_of_the_60s_&amp;_70s &lt;&#x2F;li&gt;
@@ -4763,14 +4849,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;the_bali_sessions_disk_3 &lt;&#x2F;li&gt;
     &lt;li&gt;π_(Pi_-_Faith_In_Chaos)_[OST] &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
-&lt;h3&gt;Various Artists&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Guitar Days - An Unlikely Story of Brazilian Music (recent)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
-&lt;h3&gt;Various_Artists&lt;&#x2F;h3&gt;
-&lt;ul&gt;
-    &lt;li&gt;Peter_Was_A_Fisherman_The_1939_Trinidad_Field_Recordings_of_Melville_and_Frences_Kerskovits (recent, CD)&lt;&#x2F;li&gt;
-&lt;&#x2F;ul&gt;
 &lt;h3&gt;Velvet_Underground&lt;&#x2F;h3&gt;
 &lt;ul&gt;
     &lt;li&gt;Live_MCMXCIII_[2] &lt;&#x2F;li&gt;
@@ -4783,8 +4861,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Verdi&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;La_Traviata_(Carteri,_Valletti,_Warren,_Monteux)_(CD1) (recent, CD)&lt;&#x2F;li&gt;
-    &lt;li&gt;La_Traviata_(Carteri,_Valletti,_Warren,_Monteux)_(CD2) (recent, CD)&lt;&#x2F;li&gt;
     &lt;li&gt;La_Traviata_CD1 &lt;&#x2F;li&gt;
     &lt;li&gt;La_Traviata_CD2 &lt;&#x2F;li&gt;
     &lt;li&gt;Otello_CD1 &lt;&#x2F;li&gt;
@@ -4930,6 +5006,7 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
     &lt;li&gt;Germfree_Adolescents &lt;&#x2F;li&gt;
     &lt;li&gt;Lets_Submerge_-_The_Anthology_-_Disc_1 &lt;&#x2F;li&gt;
     &lt;li&gt;Lets_Submerge_-_The_Anthology_-_Disc_2 &lt;&#x2F;li&gt;
+    &lt;li&gt;Live_@_The_Roundhouse_London_2008 &lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Xiu_Xiu&lt;&#x2F;h3&gt;
 &lt;ul&gt;
@@ -4945,7 +5022,6 @@ I use it when I&#x27;m out in a used record store and I forget what we have.)&lt
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;X‐Ray_Spex&lt;&#x2F;h3&gt;
 &lt;ul&gt;
-    &lt;li&gt;Live_@_The_Roundhouse_London_2008 (recent, CD)&lt;&#x2F;li&gt;
 &lt;&#x2F;ul&gt;
 &lt;h3&gt;Yeah_Yeah_Yeahs&lt;&#x2F;h3&gt;
 &lt;ul&gt;
